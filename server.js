@@ -1,4 +1,4 @@
-var http_port = process.env.PORT || 1337;
+var http_port = process.env.PORT || 3000;
 var http = require('http');
 var start = function(){
 	
@@ -10,6 +10,6 @@ var start = function(){
  server.listen(http_port);
  console.log('listening to http://localhost:' + http_port);
 };// end start()
- start();
-//exports.start = start;
+
+exports.start = start;
 
