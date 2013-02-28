@@ -1,4 +1,4 @@
-exports.build = function(title, pagetitle, content) {
+exports.build = function(title, pagetitle, content, _extra) {
  return ['<!doctype html>',
   '<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>{title}</title>',
   
@@ -7,30 +7,23 @@ exports.build = function(title, pagetitle, content) {
   '<style>body {padding-top: 60px;}</style> ',
   '<link href="/assets/css/bootstrap-responsive.css" rel="stylesheet"/>\n',
   '<link rel="stylesheet" href="/assets/style.css" />',
+  '{extra}',
   '</head>',
   '<body>',
-  
- '<div class="navbar navbar-inverse navbar-fixed-top">',
+  '<div class="overall-container">',
+ '<div class="navbar">',
  '     <div class="navbar-inner">',
-  '      <div class="container">',
-   '       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">',
-    '        <span class="icon-bar"></span>',
-     '       <span class="icon-bar"></span>',
-      '      <span class="icon-bar"></span>',
-       '   </button>',
-     '     <a class="brand" href="#">{pagetitle}</a>',
-     '     <div class="nav-collapse collapse">',
-     '       <ul class="nav">',
-     '         <li class="active"><a href="#">Home</a></li>',
-     '         <li><a href="#about">About</a></li>',
-      '        <li><a href="#contact">Contact</a></li>',
-      '      </ul>',
-      '    </div>',
-      '  </div>',
-     ' </div>',
+ '      <div class="container">',
+   			'<div class="top-bar">',
+     			'<div class="brand">{pagetitle}</div>',
+     			'</div>',
+   				'<div id="Stage" class="EDGE-41346455">',
+				'</div>',
+      		'</div>',
+   		'</div>',
     '</div>',
   '<div id="content" class="container">{content}</div>\n',
-  
+  '</div>',
   
   ' <script src="/assets/js/jquery.js"></script>',
  
@@ -43,12 +36,16 @@ exports.build = function(title, pagetitle, content) {
   '  <script src="/assets/js/bootstrap-popover.js"></script>',
   '  <script src="/assets/js/bootstrap-button.js"></script>', 
   '  <script src="/assets/js/bootstrap-collapse.js"></script>',
-    ' <script src="/assets/js/navigator.js"></script>',
+//  ' <script src="/assets/js/planb_edge.js"></script>',
+ // ' <script src="/assets/js/planb_edgeActions.js"></script>',
+ ' <script src="/assets/js/planb_edgePreload.js"></script>',
+  ' <script src="/assets/js/navigator.js"></script>',
 
   '</html>'
  ].join('\n')
  .replace(/\{title\}/g, title)
  .replace(/\{pagetitle\}/g, pagetitle)
- .replace(/\{content\}/g, content);
+ .replace(/\{content\}/g, content)
+ .replace(/\{extra\}/g, _extra);
 }
  

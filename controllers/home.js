@@ -1,35 +1,86 @@
 var template = require('../views/template-main');
 var test_data = require('../model/test-data');
+var req = require("../node_modules/express/lib/request");
+var http = require('http');
+var url = require('url');
+
 
 exports.get = function(req, res) {
 	var teamlist = test_data.teamlist;
 	var strTeam = "", i = 0;
-
+	var query = require('url').parse(req.url,true).query;
 	var date = new Date();
+	console.log(query.dotw);
+	if(query.dotw === undefined){
+		query.dotw = '';
+	}
+	switch(query.dotw){
+		case 'Thu':{
+			console.log("Thursday");
+			date = new Date(2013, 02, 07, 15, 30 );
+			break;
+		}
+		case 'Fri':{
+			console.log("Friday");
+			date = new Date(2013, 02, 08, 16, 30 );
+			break;
+		}
+		case 'Sat':{
+			console.log("Saturday");
+			date = new Date(2013, 02, 09, 15, 30 );
+			break;
+		}
+		case 'Sun':{
+			console.log("Sunday");
+			date = new Date(2013, 02, 10, 15, 30 );
+			break;
+		}
+		case 'Mon':{
+			console.log("Monday");
+			date = new Date(2013, 02, 11, 15, 30 );
+			break;
+		}
+		case 'Tue':{
+			console.log("Tuesday");
+			date = new Date(2013, 02, 12, 15, 30 );
+			break;
+		}
+		case '':{
+			console.log("default");
+			date = new Date(2013, 02, 09, 9, 30 );
+			break;
+		}
+	}
+	//console.log(date);
 	var current_date = date.getUTCDate();
 	var current_hour = date.getHours();
 	var current_mins = date.getMinutes();
 	var _numsessions = 0;
+	
+	
+	
+	
 	for ( i = 0; i < teamlist.VCALENDAR.VEVENT.length; ) {
 
 		var _startTime = teamlist.VCALENDAR.VEVENT[i].DTSTART;
-		//console.log(_startTime);
+	//	console.log("startTime:"+_startTime);
 		var year = _startTime.substring(0, 4);
-		var month = date.getMonth();
+		var month = (_startTime.substring(5,6))-1;//date.getMonth();
 		//(_startTime.substring(5,6)-01);
-		var day = date.getDate();
+		var day = _startTime.substring(6,8);//date.getDate();
 		//_startTime.substring(7,8);
 		var hour = _startTime.substring(9, 11);
 		var min = _startTime.substring(11, 13);
+		
 		var _startDate = new Date(year, month, day, hour, min);
-
+	
 		var _endTime = teamlist.VCALENDAR.VEVENT[i].DTEND;
 		//console.log(_endTime);
 		var endyear = _endTime.substring(0, 4);
 		var endmonth = date.getMonth();
-		;//(_endTime.substring(5,6)-1);
+		//(_endTime.substring(5,6)-1);
 		var endday = date.getDate();
-		;//_endTime.substring(7,8);
+		//_endTime.substring(7,8);
 		var endhour = _endTime.substring(9, 11);
 		var endmin = _endTime.substring(11, 13);
 
@@ -38,12 +89,13 @@ exports.get = function(req, res) {
 		var _pmEnd = "AM";
 
 		// if(date >= _startDate && date <=_endDate ){ put this in once we get closer
-
+		
 		//console.log("_startDate.getTime():"+_startDate.getTime());
 		//console.log("currentTime:"+date.getTime());
 		//console.log("_endDate.getTime():"+_endDate.getTime());
-		if (date.getTime() >= _startDate.getTime() && date.getTime() <= _endDate.getTime()) {// && date.getTime() <= _endDate.getTime()
+		if ( (date.getDate() ==_startDate.getDate()) && date.getTime() >= _startDate.getTime() && date.getTime() <= _endDate.getTime()) {// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
+			
 			if (hour > 12) {
 				hour = hour - 12;
 				_pmStart = "PM";
@@ -87,12 +139,16 @@ exports.get = function(req, res) {
 			 
 			 
 			
-			strTeam = strTeam + "<li class='hidden'><div class='summary'>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + "</div>" + "<div class='location'>" + teamlist.VCALENDAR.VEVENT[i].LOCATION + "</div>" +
-			 "<div class='starts'> Starts: " + hour + ":" + min + _pmStart + "</div>"+
-			 "<div class='ends'> Ends: " + endhour + ":" + endmin + _pmEnd + "</div>" 
-			 + "<div class='time-left'> Time Left: " + hourtext + ':' + mintext + "</div>" 
-			 + "<div class='more-info'> More Info: <a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>Here</a></div>" 
-			 + "</li>";
+			strTeam = strTeam + "<li class='hidden'>"+
+			"<button type='button' class='close' >×</button>"+
+			"<div class='summary'>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + " </div>"+
+			
+			
+			  "<div class='starts'>  " + hour + ":" + min + _pmStart +" - "+ endhour + ":" + endmin + _pmEnd + "</div>"+
+			  "<div class='time-left'> Time Left: " + hourtext + ':' + mintext + "</div>" +
+			  "<div class='location'>" + teamlist.VCALENDAR.VEVENT[i].LOCATION + "</div>" +
+			  "<div class='more-info'> More Info: <a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>Here</a></div>" +
+			  "</li>";
 			_numsessions++;
 		}
 
@@ -102,10 +158,15 @@ exports.get = function(req, res) {
 		var noSession = require('../views/no-session');
 		strTeam = noSession.build( "<li>Hmmm, nothing really seems to be going on right now, time to grab a taco...</li>");
 	}
-	strTeam = "<ul>" + strTeam + "</ul>"
+	strTeam = "<ul id='sessions'>" + strTeam + "</ul>"
 	res.writeHead(200, {
 		'Content-Type' : 'text/html'
 	});
-	res.write(template.build("R/GA - Going South ", "<div id='title'>Plan 'B'</div>", strTeam));
+	var _night = '';
+	console.log(date);
+	if(date.getHours() >= 16 || date.getHours() < 5){
+		_night = '<link rel="stylesheet" href="/assets/css/night.css" />';
+	}
+	res.write(template.build("R/GA - Going South ", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night));
 	res.end();
 }

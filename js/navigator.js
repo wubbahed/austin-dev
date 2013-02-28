@@ -28,7 +28,7 @@
 	]}
 	
 function filterVenues(_arr){
-	
+	aDdsaf
 }	
 /*	
 function filterVenues(_arr){

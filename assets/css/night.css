@@ -1,0 +1,35 @@
+body {
+	background:#b2b2b2;
+	color:#ffffff;	
+}
+.overall-container{
+	background:#000;
+	color:#ffffff;
+}
+.navbar{
+	background:#000;
+}
+.navbar .navbar-inner {
+	background:#000;
+	color:#ffffff;
+}
+#sessions  li{
+	border-top:1px #ffffff solid;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+}
+.summary{
+	font-weight:bold;
+	width:auto;
+	
+}
+#title{
+	background-position: 0 0px;
+}
+#Stage_a, #Stage_pl, #Stage_n, #Stage_b{
+	color:#fff!important;
+}
+#sessions li {
+	background:#000;
+}
