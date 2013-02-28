@@ -36,8 +36,8 @@ exports.build = function(title, pagetitle, content, _extra) {
   '  <script src="/assets/js/bootstrap-popover.js"></script>',
   '  <script src="/assets/js/bootstrap-button.js"></script>', 
   '  <script src="/assets/js/bootstrap-collapse.js"></script>',
-//  ' <script src="/assets/js/planb_edge.js"></script>',
- // ' <script src="/assets/js/planb_edgeActions.js"></script>',
+  ' <script src="/assets/js/planb_edge.js"></script>',
+ ' <script src="/assets/js/planb_edgeActions.js"></script>',
  ' <script src="/assets/js/planb_edgePreload.js"></script>',
   ' <script src="/assets/js/navigator.js"></script>',
 
