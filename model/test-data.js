@@ -1,7 +1,6 @@
 var thelist = function() {
  //var objJson = {"GroupName":"D","count":4,"teams":[{"country":"England"}, {"country":"France"}, {"country":"Sweden"}, {"country":"Ukraine"}]};
-  var url = 'http://ical2json.pb.io/schedule.sxsw.com/user_events/5f7c49aaf01a04507da7c951b784807233240fc1.ics';
-  var request = require('request');
+  
   
  /* request(url, function (error, response, body) {
   if (!error && response.statusCode == 200) {
