@@ -10,6 +10,6 @@ var start = function(){
  server.listen(http_port);
  console.log('listening to http://localhost:' + http_port);
 };// end start()
-
-exports.start = start;
+ start();
+//exports.start = start;
 
