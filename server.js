@@ -1,4 +1,4 @@
-var http_port = 8899;
+var http_port = process.env.PORT || 1337;
 var http = require('http');
 var start = function(){
  var server = http.createServer(function (req, res) {
