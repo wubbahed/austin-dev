@@ -6,6 +6,8 @@ http.createServer(function (req, res) {
   require('./router').get(req, res);
  }).listen(http_port);
  console.log('listening to http://localhost:' + http_port);
+ 
+ 
 var start = function(){
 
 	
