@@ -1,12 +1,11 @@
 	var http = require('http')
 	var http_port = process.env.PORT || 3000;
 
-http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n');
-}).listen(http_port);
 
-
+http.createServer(function (req, res) {
+  require('./router').get(req, res);
+ }).listen(http_port);
+ console.log('listening to http://localhost:' + http_port);
 var start = function(){
 
 	
