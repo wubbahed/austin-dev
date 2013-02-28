@@ -89,13 +89,13 @@ function success(position) {
   var _li  =[];
   // first sort through the sessions
   for(i=0 ; i< _sessions.length; i++){
-  		console.log("getting here:"+1);
+  		
 		// strip off the address, carrige return in the json was breaking it
 		var _shortName = _sessions[i].innerHTML.slice(0,_sessions[i].innerHTML.indexOf("\n"));
 		// iterate through the locations and when we have a match, 
 		//calculate the distance between current location and venue and add it to the parent li
 		for(j=0; j < locations.locations.length; j++){
-			console.log("getting here:"+2);
+			
 			if( locations.locations[j].location.indexOf(_shortName) >-1){
 				var _distance = distance( _lat, _long, Number(locations.locations[j].lat), Number(locations.locations[j].long),'K');
 				_li.push($(_sessions[i]).parent());
@@ -108,14 +108,14 @@ function success(position) {
 	}
 	
 	_li.sort(function(a, b) {
-		console.log("getting here:"+3);
+		
 	    if(Number($(a).attr("distance")) > Number($(b).attr("distance")))
 	        return 1;
 	    else return -1;
 	});
 	
 	$('#sessions').empty().html(_li);
-	console.log("getting here:"+4);
+	
 	fadeIn();
 	
 	
@@ -132,14 +132,14 @@ function fadeIn(){
 		
 	//	if(i<3){
 			
-			$(_sessions[i]).parent().delay(1800+(500*i)).fadeIn(500);
+			$(_sessions[i]).parent().delay(1800+(500*i)).fadeIn(500 );
 		
 		//}
 	}
 	
 	$('.close').click(function (e) {
 	  e.preventDefault();
-	  $(this).parent().slideUp('500');
+	  $(this).parent().slideUp( 500, 'easeOutBounce');
 	});
 	$(window).resize(function(){
 		console.log("resizing the window");

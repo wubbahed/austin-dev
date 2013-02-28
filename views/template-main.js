@@ -26,7 +26,7 @@ exports.build = function(title, pagetitle, content, _extra) {
   '</div>',
   
   ' <script src="/assets/js/jquery.js"></script>',
- 
+ ' <script src="/assets/js/jquery.easing.1.3.js"></script>',
   '  <script src="/assets/js/bootstrap-transition.js"></script>',
   ' <script src="/assets/js/bootstrap-modal.js"></script>',
   '  <script src="/assets/js/bootstrap-dropdown.js"></script>',
