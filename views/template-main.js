@@ -30,8 +30,8 @@ exports.build = function(title, pagetitle, content, _extra) {
   '<div id="content" class="container">{content}</div>\n',
   '</div>',
   
-  ' <script src="/assets/js/jquery.js"></script>',
-
+ // ' <script src="/assets/js/jquery.js"></script>',
+'<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>',
 //  '  <script src="/assets/js/bootstrap-transition.js"></script>',
   ' <script src="/assets/js/bootstrap-modal.js"></script>',
  // '  <script src="/assets/js/bootstrap-dropdown.js"></script>',
@@ -41,6 +41,8 @@ exports.build = function(title, pagetitle, content, _extra) {
  // '  <script src="/assets/js/bootstrap-popover.js"></script>',
   '  <script src="/assets/js/bootstrap-button.js"></script>', 
   //'  <script src="/assets/js/bootstrap-collapse.js"></script>',
+  '  <script src="/assets/js/jquery.color.js"></script>',
+ '  <script src="/assets/js/jquery.flippy.min.js"></script>',
  ' <script src="/assets/js/planb_edgePreload.js"></script>',
   ' <script src="/assets/js/navigator.js"></script>',
 

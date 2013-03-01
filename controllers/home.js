@@ -22,12 +22,12 @@ exports.get = function(req, res) {
 		}
 		case 'Fri':{
 			console.log("Friday");
-			date = new Date(2013, 02, 08, 16, 30 );
+			date = new Date(2013, 02, 08, 17, 30 );
 			break;
 		}
 		case 'Sat':{
 			console.log("Saturday");
-			date = new Date(2013, 02, 09, 15, 30 );
+			date = new Date(2013, 02, 09, 17, 23 );
 			break;
 		}
 		case 'Sun':{
@@ -166,6 +166,6 @@ exports.get = function(req, res) {
 	if(date.getHours() >= 16 || date.getHours() < 5){
 		_night = '<link rel="stylesheet" href="/assets/css/night.css" />';
 	}
-	res.write(template.build("R/GA - Going South ", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night));
+	res.write(template.build("R/GA - Plan B", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night));
 	res.end();
 }

@@ -202,7 +202,7 @@ ul{
 }
 #sessions li{
 	padding:0 .5em ;
-	border-top:1px #b2b2b2 solid;
+	border-top:none;
 	border-bottom:none;
 	position:relative;
 	margin:0 0 0em 0;
@@ -215,14 +215,37 @@ ul{
 #sessions li div{
 	padding:.5em 0em 0em 0;
 	width:100%;
-	font-size: 0.9em;
+	font-size: 0.8em;
+	color:#000000;
 }
 #sessions li  .summary{
 	font-weight:bold;
 	width:auto;
-	font-size: 1em;
+	font-size: .8em;
 	padding: 2em 0em 0em 0;
-	
+}
+@media screen and (device-aspect-ratio: 2/3)  {
+		/* Styles */
+		#sessions li div{
+			font-size: .8em;
+			padding:2em .5em 0em .5em
+		}
+		#sessions li  .summary{	
+			padding: 1em 0em 0em 0em;
+			font-size: .8em;
+		}
+		#sessions .starts{
+			padding: 0em 0em 0em 0em;
+		}
+	}
+#sessions .first{
+	background:#f1f1f1;
+}
+#sessions .second{
+	background:#e0e0e0;
+}
+#sessions .third{
+	background:#d2d2d2;
 }
 button.close {
 	padding: 0;
@@ -273,7 +296,9 @@ button.close img{
 #sessions .starts{
 	float: left;
 	padding: 0em 1em 1em 0em;
+	
 }
+
 .overall-container{
 	width:100%;
 	height:100%;
@@ -282,7 +307,8 @@ button.close img{
 
 .navbar {
 	margin-bottom: 0px;
-	height:100%;
+	height:25%;
+	border-bottom: 1px solid #d2d2d2;
 }
 .navbar .navbar-inner{
 	padding: 0px .5em;
@@ -298,7 +324,7 @@ button.close img{
 	-webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065);
 	-moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065);
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065);
-	border-bottom: 1px solid #ffffff;
+	border-bottom:none;
 	border-left:none;
 	border-top:none;
 	border-right:none;
@@ -344,14 +370,14 @@ button.close img{
 	text-shadow:0 0px 0 #ffffff;
 }
 #Stage{
-	position:relative;
+	position:absolute;
 	margin:0 auto;
-	top:20%;
+	top:0%;
 	overflow:visible!important;
 }
 
-#Stage_slash{
-	position:relative;
+#Stage_Slash{
+	top: 6px!important;
 }
 html, body{
 	background:#000;

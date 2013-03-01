@@ -122,27 +122,59 @@ function success(position) {
 
 }
 function fadeIn(){
-	
+	 $('#sessions li').click(function(){
+  // 	console.log(this);
+	 	$(this).flippy({
+		    content:"Hi !",
+		    direction:"LEFT",
+		    duration:"750",
+		    color_target:'#00000'
+	 	});
+ 	});
    
 	$('.overall-container').css({'height':(($(window).height()+$(window).outerHeight ))+'px'});
 	
 	_sessions = $('.location');
-	$('.navbar').delay(1750).animate({height:'25%'}, 500);
-	$('#Stage').delay(1750).animate({top:'0%'}, 500);
+	//$('.navbar').delay(1750).animate({height:'25%'}, 500);
+	//$('#Stage').delay(1750).animate({top:'0%'}, 500);
 	for(i=0;i<_sessions.length;i++){
 		$(_sessions[i]).parent().removeClass('hidden');
-		$(_sessions[i]).parent().hide(0);
+		//$(_sessions[i]).parent().hide(0);
+		$(_sessions[i]).parent().css('top', $(window).height());
 		
-	//	if(i<3){
-			
-			$(_sessions[i]).parent().delay(1800+(500*i)).fadeIn(500 );
+		//	$(_sessions[i]).parent().delay(500+(500*i)).fadeIn(500);
+			$(_sessions[i]).parent().delay(850+(150*i)).animate({top:0}, (450), 'easeOutCubic');
 		
 		//}
 	}
-	
+	//	$(_sessions[0]).parent().animate({ backgroundColor: "#f6f6f6" }, 500);
+	//	$(_sessions[1]).parent().animate({ backgroundColor: "#e3e3e3" }, 500);
+	//	$(_sessions[2]).parent().animate({ backgroundColor: "#cccccc" }, 500);
+		
+		$(_sessions[0]).parent().addClass('first');
+		$(_sessions[1]).parent().addClass('second');
+		$(_sessions[2]).parent().addClass('third');
+		
 	$('.close').click(function (e) {
 	  e.preventDefault();
+	  var _newStart=0;
+	  var _sessions = $('.location');
+	    for(i=0;i<_sessions.length;i++){
+	  	if( $(_sessions[i]).parent().hasClass("first")){
+	  		_newStart = i+1;
+	  		console.log("newStart: "+_newStart);
+	  		$(_sessions[i]).parent().removeClass('first');
+	  		break;
+	  	}
+	  }
+	  	$(_sessions[_newStart]).parent().addClass('first');
+	 	$(_sessions[_newStart+1]).parent().addClass('second');
+		$(_sessions[_newStart+2]).parent().addClass('third');
 	  $(this).parent().slideUp( 500, 'easeOutBounce');
+	  
+	  
+	
+		
 	});
 	$(window).resize(function(){
 		console.log("resizing the window");
@@ -153,21 +185,27 @@ function fadeIn(){
 function error(msg) {
  // $('li').removeClass("hidden");
   	fadeIn();
-  // console.log(arguments);
+   console.log(arguments);
 }	
 	
 	
 	
 if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(success, error, {'enableHighAccuracy':true,'timeout':10000,'maximumAge':0});
+  navigator.geolocation.getCurrentPosition(success, error, {'enableHighAccuracy':true,'timeout':10000,'maximumAge':50});
 } else {
   error('not supported');
   
 }
  window.addEventListener("load",function() {
  
-   $(window).scrollTo(0, 0);
- 
+   $('#sessions li').click(function(e){
+   	console.log("BWAHAAAAA"+this);
+	 	$(this).flippy({
+		    content:"Hi !",
+		    direction:"LEFT",
+		    duration:"750"
+	 	});
+ 	});
  });
 function hideAddressBar()
 {
