@@ -122,10 +122,13 @@ function success(position) {
 
 }
 function fadeIn(){
-	$('.overall-container').css({'height':(($(window).height()))+'px'});
+	
+   
+	$('.overall-container').css({'height':(($(window).height()+$(window).outerHeight ))+'px'});
 	
 	_sessions = $('.location');
 	$('.navbar').delay(1750).animate({height:'25%'}, 500);
+	$('#Stage').delay(1750).animate({top:'0%'}, 500);
 	for(i=0;i<_sessions.length;i++){
 		$(_sessions[i]).parent().removeClass('hidden');
 		$(_sessions[i]).parent().hide(0);
@@ -144,6 +147,7 @@ function fadeIn(){
 	$(window).resize(function(){
 		console.log("resizing the window");
       $('.overall-container').css({'height':(($(window).height()))+'px'});
+      $('.overall-container').css({'height':(($(window).height()+$(window).outerHeight ))+'px'});
     });
 }
 function error(msg) {
@@ -160,8 +164,25 @@ if (navigator.geolocation) {
   error('not supported');
   
 }
-
-
-
+ window.addEventListener("load",function() {
+ 
+   $(window).scrollTo(0, 0);
+ 
+ });
+function hideAddressBar()
+{
+  if(!window.location.hash)
+  {
+      if(document.height < window.outerHeight)
+      {
+          document.body.style.height = (window.outerHeight ) + 'px';
+      }
+ 
+      setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+  }
+}
+ 
+window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+window.addEventListener("orientationchange", hideAddressBar );
 
 }(window.jQuery);

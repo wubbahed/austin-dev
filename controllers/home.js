@@ -47,7 +47,7 @@ exports.get = function(req, res) {
 		}
 		case '':{
 			console.log("default");
-			date = new Date(2013, 02, 09, 9, 30 );
+			date = new Date(2013, 02, 09, 9, 45 );
 			break;
 		}
 	}
@@ -128,7 +128,7 @@ exports.get = function(req, res) {
 			   //Text formatting
 			   var hourtext = '00';
 			   if (vhourDiff > 0){ hourtext = String(vhourDiff);}
-			   if (hourtext.length == 1){hourtext = '0' + hourtext};                                                              
+			 //  if (hourtext.length == 1){hourtext = '0' + hourtext};                                                              
 			
 			   var mintext = '00';                           
 			   if (vmindiff > 0){ mintext = String(vmindiff);}
@@ -136,18 +136,17 @@ exports.get = function(req, res) {
 			
 			  //shows output as HH:MM 
 			 //  duration.value= hourtext + ':' + mintext;
-			 
-			 
+			  
+			 var _strLocation = teamlist.VCALENDAR.VEVENT[i].LOCATION.slice(0,teamlist.VCALENDAR.VEVENT[i].LOCATION.indexOf("\n"));
 			
 			strTeam = strTeam + "<li class='hidden'>"+
-			"<button type='button' class='close' >×</button>"+
+			"<button type='button' class='close' ><img src='assets/img/close.png'/></button>"+
 			"<div class='summary'>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + " </div>"+
 			
 			
-			  "<div class='starts'>  " + hour + ":" + min + _pmStart +" - "+ endhour + ":" + endmin + _pmEnd + "</div>"+
-			  "<div class='time-left'> Time Left: " + hourtext + ':' + mintext + "</div>" +
-			  "<div class='location'>" + teamlist.VCALENDAR.VEVENT[i].LOCATION + "</div>" +
-			  "<div class='more-info'> More Info: <a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>Here</a></div>" +
+			  "<div class='starts'>  " + hour + ":" + min + _pmStart +" - "+ endhour + ":" + endmin + _pmEnd + " / "+ hourtext + ':' + mintext +" Left</div>"+
+			  "<div class='location'>" + _strLocation + "</div>" +
+			//  "<div class='more-info'> More Info: <a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>Here</a></div>" +
 			  "</li>";
 			_numsessions++;
 		}
