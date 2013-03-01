@@ -132,7 +132,7 @@ function fadeIn(){
 	 	});
  	});
    
-	$('.overall-container').css({'height':(($(window).height()+$(window).outerHeight ))+'px'});
+	$('.overall-container').css({'height':($(window).height())+'px'});//+$(window).outerHeight )
 	
 	_sessions = $('.location');
 	//$('.navbar').delay(1750).animate({height:'25%'}, 500);
