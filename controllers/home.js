@@ -13,7 +13,8 @@ exports.get = function(req, res) {
 	var date = new Date();
 	var tzOffset = date.getTimezoneOffset;
 	console.log(date.getTimezoneOffset());
-	
+	date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-6, date.getMinutes());
+	console.log(date.getTimezoneOffset());
 	//a = new time.Date(1337324400000);
 	//	console.log(query.dotw);
 	if (query.dotw === undefined) {
