@@ -17,12 +17,12 @@ exports.get = function(req, res) {
 	switch(query.dotw) {
 		case 'Thu': {
 			console.log("Thursday");
-			date = new Date(2013, 02, 07, 15, 30);
+			date = new Date(2013, 02, 07, date.getHours(), date.getMinutes());
 			break;
 		}
 		case 'Fri': {
 			console.log("Friday");
-			date = new Date(2013, 02, 08, 17, 30);
+			date = new Date(2013, 02, 08, date.getHours(), date.getMinutes());
 			break;
 		}
 		case 'Sat': {
@@ -32,12 +32,12 @@ exports.get = function(req, res) {
 		}
 		case 'Sun': {
 			console.log("Sunday");
-			date = new Date(2013, 02, 10, 15, 30);
+			date = new Date(2013, 02, 10, date.getHours(), date.getMinutes());
 			break;
 		}
 		case 'Mon': {
 			console.log("Monday");
-			date = new Date(2013, 02, 11, 15, 30);
+			date = new Date(2013, 02, 11, date.getHours(), date.getMinutes());
 			break;
 		}
 		case 'Tue': {
@@ -86,9 +86,12 @@ exports.get = function(req, res) {
 		var _endDate = new Date(endyear, endmonth, endday, endhour, endmin);
 		var _pmStart = "AM";
 		var _pmEnd = "AM";
+		
+		_newStartTime = new Date(year, month, day, hour-1, min); 
 
 
-		if ((date.getDate() == _startDate.getDate()) && date.getTime() >= _startDate.getTime() && (date.getTime() <= _endDate.getTime() || endhour == 02 )) {// && date.getTime() <= _endDate.getTime()
+		if ((date.getDate() == _startDate.getDate()) && date.getTime() >= _newStartTime && (date.getTime() <= _endDate.getTime() || endhour == 02 )) {
+			// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
 			if (hour > 12) {
 				hour = hour - 12;
@@ -98,8 +101,14 @@ exports.get = function(req, res) {
 				endhour = endhour - 12;
 				_pmEnd = "PM";
 			}
+			
+			var _started = false;
 			var _timeLeft = (_endDate.getTime() - date.getTime());
-
+			if(date.getTime() < _startDate.getTime()){
+				_timeLeft =  _startDate.getTime() - date.getTime(); 
+				_started = true;
+			}
+			
 			var _mins_left = Math.floor((_timeLeft / 1000 / 60));
 			var _hours_left = Math.floor((_timeLeft / 1000 / 60 / 60));
 
@@ -138,7 +147,10 @@ exports.get = function(req, res) {
 			if (mintext.length == 1) {
 				mintext = '0' + mintext
 			};
-
+			var _timeText =  ""+hourtext + ':' + mintext + " Left";
+			if(_started){
+				 _timeText =  "Starts in "+hourtext + ':' + mintext + "";
+			}
 			//shows output as HH:MM
 			//  duration.value= hourtext + ':' + mintext;
 
@@ -148,7 +160,7 @@ exports.get = function(req, res) {
 			strTeam = strTeam + "<li class='hidden'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			//"<div class='inital_data slide'>" +
 			"<div class='summary '><a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + "</a> </div>" +
-			 "<div class='starts'>  " + hour + ":" + min + _pmStart + " - " + endhour + ":" + endmin + _pmEnd + " / " + hourtext + ':' + mintext + " Left</div>" + 
+			 "<div class='starts'>  " + hour + ":" + min + _pmStart + " - " + endhour + ":" + endmin + _pmEnd + " / " + _timeText+ "</div>" + 
 			 "<div class='location'><a class='map-address' href=' http://maps.google.com/maps?q=" + _gLocation + "'>" + _strLocation + "</a></div>" +
 			// " </div>" +
 

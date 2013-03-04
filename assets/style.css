@@ -234,9 +234,9 @@ ul{
 }
 #sessions li  .summary{
 	font-weight:bold;
-	width: 80%;
+	width: 100%;
 	font-size: .8em;
-	padding: 2em 2em 0em 2em;
+	padding: 2em 0em 0em 0em;
 }
 
 @media screen and (device-aspect-ratio: 2/3)  {
