@@ -106,6 +106,8 @@
 		var _locationArr = $('.map-address');
 		var _totalSessions = 0;
 		var _li = [];
+		var _getTime = new Date();
+		alert(_getTime);
 		// first sort through the sessions
 		for ( i = 0; i < _sessions.length; i++) {
 
