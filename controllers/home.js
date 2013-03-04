@@ -23,7 +23,7 @@ exports.get = function(req, res) {
 		}
 		case 'Fri': {
 			console.log("Friday");
-			date = new Date(2013, 02, 08, date.getHours(), date.getMinutes());
+			date = new Date(2013, 02, 08, 14, 25);
 			break;
 		}
 		case 'Sat': {
