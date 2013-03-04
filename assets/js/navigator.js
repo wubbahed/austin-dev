@@ -90,13 +90,14 @@ function distance(lat1, lon1, lat2, lon2, unit) {
 	return dist
 }  	
 function success(position) {
-  
+  console.log("GETTING INTO SUCCESS");
  // var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-  var _lat =30.268543//position.coords.latitude;// 30.281994;//30.262725;//
-  var _long =-97.742027;//position.coords.longitude; //-97.740418;//p-97.74019;
+  var _lat =position.coords.latitude;// 30.281994;//30.262725;//
+  var _long =position.coords.longitude; //-97.740418;//p-97.74019;
   var _okVenues = [];
   var _sessions = $('.location');
   var _locationArr = $('.map-address');
+  console.log(locations);
   var _totalSessions = 0;
   var _li  =[];
   // first sort through the sessions
@@ -104,15 +105,17 @@ function success(position) {
   		
 		// strip off the address, carrige return in the json was breaking it
 		var _shortName = _sessions[i].innerHTML.slice(0,_sessions[i].innerHTML.indexOf("\n"));
-		// iterate through the locations and when we have a match, 
+console.log(_shortName);
 		//calculate the distance between current location and venue and add it to the parent li
 		for(j=0; j < locations.locations.length; j++){
 			
 			if( locations.locations[j].location.indexOf(_shortName) >-1){
 				var _distance = distance( _lat, _long, Number(locations.locations[j].lat), Number(locations.locations[j].long),'K');
-				_li.push($(_sessions[i]).parent().parent());
-				$(_sessions[i]).parent().parent().attr('distance',_distance );
-				$(_locationArr[i]).attr('href',' http://maps.google.com/maps?q='+locations.locations[j].lat+','+locations.locations[j].long)
+				_li.push($(_sessions[i]).parent());
+				$(_sessions[i]).parent().attr('distance',_distance );
+				
+				$(_locationArr[i]).attr('href',' http://maps.google.com/maps?q='+locations.locations[j].lat+','+locations.locations[j].long);
+				  console.log($(_locationArr[i]));
 				break;
 			}
 		}
@@ -165,40 +168,7 @@ function fadeIn(){
 		$(_sessions[1]).addClass('second');
 		$(_sessions[2]).addClass('third');
 		//add support for swiping
-			var slides = jQuery('#sessions li')
-					var width = slides[0].width*.5; 
-					slides
-					.on('swiperight', function(e) {
-							if($(this).position().left<'0'){
-								$(this).animate({left:0},500);
-							//	$(this).find('.close').animate({right:'52%'},500);
-							} 
-					})
-					.on('swipeleft', function(e) {
-						if($(this).position().left==0){
-								$(this).animate({left:'-100%'},500);
-							//	$(this).find('.close').animate({right:'8%'},500);
-							}
-					})
-					.on('click', function(e) {
-							if($(this).position().left<'0'){
-								$(this).animate({left:0},500);
-							//	$(this).find('.close').animate({right:'52%'},500);
-							} else{
-								$(this).animate({left:'-100%'},500);
-							///	$(this).find('.close').animate({right:'8%'},500);
-							}
-					})
-					
-					.on('touch', function(e) {
-							if($(this).position().left<'0'){
-								$(this).animate({left:0},500);
-							//	$(this).find('.close').animate({right:'52%'},500);
-							} else{
-								$(this).animate({left:'-100%'},500);
-								//$(this).find('.close').animate({right:'8%'},500);
-							}
-					})	
+		
 	$('.close').click(function (e) {
 	  e.preventDefault();
 	 
@@ -263,12 +233,12 @@ function error(msg) {
 	
 	window.addEventListener('unload', function() { $('body').hide(); } );
 	
-if (window.navigator.geolocation) {
+/*if (window.navigator.geolocation) {
   window.navigator.geolocation.getCurrentPosition(success, error, {'enableHighAccuracy':true,'timeout':7000,'maximumAge':0});
 } else {
   error('not supported');
   
-}
+}*/
 
 
 //	window.addEventListener("orientationchange", hideAddressBar );
@@ -288,7 +258,7 @@ if (window.navigator.geolocation) {
 		  error('not supported');
 		  
 		}
-					var slides = jQuery('#sessions li')
+			/*		var slides = jQuery('#sessions li')
 					var width = slides[0].width*.5; 
 					slides
 					.on('swiperight', function(e) {
@@ -335,6 +305,6 @@ if (window.navigator.geolocation) {
 							}
 					})
 					
-					
+					*/
 	});
 }(window.jQuery);

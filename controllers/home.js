@@ -1,4 +1,5 @@
 var template = require('../views/template-main');
+var noSession = require('../views/no-session');
 var test_data = require('../model/test-data');
 var req = require("../node_modules/express/lib/request");
 var http = require('http');
@@ -47,7 +48,7 @@ exports.get = function(req, res) {
 		}
 		case '':{
 			console.log("default");
-			date = new Date(2013, 02, 09, 9, 45 );
+			date = new Date();
 			break;
 		}
 	}
@@ -141,39 +142,40 @@ exports.get = function(req, res) {
 			 //  duration.value= hourtext + ':' + mintext;
 			  
 			 var _strLocation = teamlist.VCALENDAR.VEVENT[i].LOCATION.slice(0,teamlist.VCALENDAR.VEVENT[i].LOCATION.indexOf("\n"));
-			var _gLocation = _strLocation.replace(/ /gi, "+");
-			console.log(_gLocation);
+			 var _gLocation = _strLocation.replace(/ /gi, "+");
+			//console.log(_gLocation);
 			strTeam = strTeam + "<li class='hidden'>"+
 			"<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>"+
 			"<div class='inital_data slide'>" +
-				"<div class='summary '>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + " </div>"+
+				"<div class='summary '><a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + "</a> </div>"+
 				"<div class='starts'>  " + hour + ":" + min + _pmStart +" - "+ endhour + ":" + endmin + _pmEnd + " / "+ hourtext + ':' + mintext +" Left</div>"+
-			  	"<div class='location'>" + _strLocation + "</div>" +
+			  	"<div class='location'><a class='map-address' href=' http://maps.google.com/maps?q=" + _gLocation + "'>" + _strLocation + "</a></div>" +
 			 " </div>" +
-			 "<div class='more slide'>" +
-			  	"<div class='more-info'><a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>More Info</a></div>" +
-			  		"<div class='map'><a class='map-address' href=' http://maps.google.com/maps?q=" + _gLocation + "'>View on Map</a></div>"+
-			 "</div>" +
+			 
 			  "</li>";
 			_numsessions++;
 		}
 
 		i = i + 1;
 	}
+		res.writeHead(200, {
+		'Content-Type' : 'text/html'
+		});
+		
 	if (_numsessions < 1) {
-		var noSession = require('../views/no-session');
-		strTeam = noSession.build( "<li>Hmmm, nothing really seems to be going on right now, time to grab a taco...</li>");
+		
+		//strTeam = noSession.build("<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>");
+		res.write( noSession.build("R/GA - Plan B","<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>","<div id='title'></div>"));
+		res.end();
+	
 	}else{
 		strTeam = "<ul id='sessions'>" + strTeam + "</ul>"
+		var _night = '';
+		;
+		if(date.getHours() >= 16 || date.getHours() < 5){
+			_night = '<link rel="stylesheet" href="/assets/css/night.css" />';
+		}
+		res.write(template.build("R/GA - Plan B", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night));
+		res.end();
 	}
-	res.writeHead(200, {
-		'Content-Type' : 'text/html'
-	});
-	var _night = '';
-	console.log(date);
-	if(date.getHours() >= 16 || date.getHours() < 5){
-		_night = '<link rel="stylesheet" href="/assets/css/night.css" />';
-	}
-	res.write(template.build("R/GA - Plan B", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night));
-	res.end();
 }

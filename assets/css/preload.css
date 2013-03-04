@@ -1,0 +1,38 @@
+body {
+
+}
+.navbar {
+	margin-bottom: 0px;
+	height: 100%;
+	border:none;
+}
+#content{
+	width:100%;
+	text-align:center;
+}
+#logo_holder {
+	margin:46% auto -3em auto;
+	width: 150px;
+}
+#logo_holder img {
+	opacity: 1.0;
+}
+#logo_base{
+	opacity:1.0;
+}
+#logo_slash{
+	opacity:1.0;
+}
+.navbar .brand {
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.brand #title{
+	margin: 20em auto 0 auto;
+	text-align: center;
+	float: none;
+	width:47px;
+}

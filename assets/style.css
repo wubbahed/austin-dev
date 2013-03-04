@@ -211,7 +211,7 @@ ul{
 	max-height: 34%;
 	height: 34%;
 	overflow:hidden;
-	width:200%;
+	width:100%;
 }
 
 
@@ -222,7 +222,7 @@ ul{
 	color:#000000;
 }
 #sessions li .inital_data{
-	width:50%;
+	width:100%;
 	float:left;
 }
 #sessions li  .more{
