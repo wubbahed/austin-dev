@@ -192,6 +192,7 @@ h1.section-h1 { border: 18px solid #fff; border-width: 28px 10px 40px; }
 #job-details-location, #job-details-department { margin-bottom: 12px; }
 .job-details-other { color: #000; }
 .hiddenControl { display: none; }
+
 .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
 	margin-right: 0px;
 	margin-left: 0px;
@@ -482,29 +483,9 @@ button.close img{
      -ms-transition: background-color 500ms linear;
      transition: background-color 500ms linear;
 }
-.notransition,
-		.notransition .slide {
-			-webkit-transition-duration: 0 !important;
-			   -moz-transition-duration: 0 !important;
-			    -ms-transition-duration: 0 !important;
-			        transition-duration: 0 !important;
-		
-			-webkit-transition-delay: 0 !important;
-			   -moz-transition-delay: 0 !important;
-			    -ms-transition-delay: 0 !important;
-			        transition-delay: 0 !important;
-		}
-
-		@media screen and (max-width: 640px) {
-			.img_slides_wrap {
-				width: 100%;
-
-				-webkit-box-sizing: content-box;
-				   -moz-box-sizing: content-box;
-				    -ms-box-sizing: content-box;
-				        box-sizing: content-box;
-			}
-		}
+a, a:visited {
+	color: #000;
+}
 html, body{
 	background:#000;
 	height:100%;

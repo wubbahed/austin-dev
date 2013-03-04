@@ -48,9 +48,10 @@ exports.build = function(title, pagetitle, content, _extra) {
  // '  <script src="/assets/js/bootstrap-tab.js"></script>',
   	'  <script src="/assets/js/bootstrap-tooltip.js"></script>',
  // '  <script src="/assets/js/bootstrap-popover.js"></script>',
-  	'  <script src="/assets/js/bootstrap-button.js"></script>', 
-	'  <script src="/assets/js/jquery.color.js"></script>',
-  	'  <script src="/assets/js/jquery.event.move.js"></script>',
+ 
+  	//'  <script src="/assets/js/bootstrap-button.js"></script>', 
+	//'  <script src="/assets/js/jquery.color.js"></script>',
+  	'  <script src="/assets/js/jgestures.min.js"></script>',
     '  <script src="/assets/js/jquery.event.swipe.js"></script>',
 	'  <script src="/assets/js/jquery.easing.1.3.js"></script>',
   	'  <script src="/assets/js/navigator.js"></script>',

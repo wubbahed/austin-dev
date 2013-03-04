@@ -82,3 +82,6 @@ body {
 #sessions li {
 	background:#000;
 }
+a, a:visited {
+	color: #fff;
+}

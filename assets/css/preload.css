@@ -10,9 +10,14 @@ body {
 	width:100%;
 	text-align:center;
 }
+#Stage{
+	position:absolute;
+	top:20%;	
+}
 #logo_holder {
-	margin:40% auto -3em auto;
+	margin:0 auto;
 	width: 150px;
+	height: 72px;
 }
 #logo_holder img {
 	opacity: 1.0;
@@ -29,9 +34,11 @@ body {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
+	position:absolute;
+	bottom:50px;
 }
 .brand #title{
-	margin: 80% auto 0 auto;
+	margin: 0 auto;
 	text-align: center;
 	float: none;
 	width:47px;
