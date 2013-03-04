@@ -10,6 +10,7 @@ exports.get = function(req, res) {
 	var strTeam = "", i = 0;
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
+	date.getTimezoneOffset();
 	//	console.log(query.dotw);
 	if (query.dotw === undefined) {
 		query.dotw = '';
@@ -104,6 +105,7 @@ exports.get = function(req, res) {
 			
 			var _started = false;
 			var _timeLeft = (_endDate.getTime() - date.getTime());
+			
 			if(date.getTime() < _startDate.getTime()){
 				_timeLeft =  _startDate.getTime() - date.getTime(); 
 				_started = true;
@@ -147,9 +149,10 @@ exports.get = function(req, res) {
 			if (mintext.length == 1) {
 				mintext = '0' + mintext
 			};
+			hourtext = date.getTimezoneOffset();
 			var _timeText =  ""+hourtext + ':' + mintext + " Left";
 			if(_started){
-				 _timeText =  "Starts in "+hourtext + ':' + mintext + "";
+				 _timeText =  "Starts in "+hourtext + ':' + mintext +"";
 			}
 			//shows output as HH:MM
 			//  duration.value= hourtext + ':' + mintext;
