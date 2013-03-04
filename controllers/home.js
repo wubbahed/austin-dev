@@ -162,7 +162,7 @@ exports.get = function(req, res) {
 			}
 			//shows output as HH:MM
 			//  duration.value= hourtext + ':' + mintext;
-			_timeText = new Date();
+			//_timeText = new Date();
 			var _strLocation = teamlist.VCALENDAR.VEVENT[i].LOCATION.slice(0, teamlist.VCALENDAR.VEVENT[i].LOCATION.indexOf("\n"));
 			var _gLocation = _strLocation.replace(/ /gi, "+");
 			//console.log(_gLocation);
