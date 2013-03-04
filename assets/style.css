@@ -228,7 +228,7 @@ ul{
 #sessions li  .more{
 	width:50%;
 	float:right;
-	font-size: 2em;
+	font-size: 1em;
    padding: 1em 0em 0em 0em;
 }
 #sessions li  .summary{
@@ -240,6 +240,27 @@ ul{
 
 @media screen and (device-aspect-ratio: 2/3)  {
 		/* Styles */
+		#sessions li div{
+			font-size: .8em;
+			padding:.5em 0em 0em 0em
+		}
+		#sessions li  .summary{	
+			padding: 1em 0em 0em 0em;
+			font-size: .8em;
+		}
+		#sessions .starts{
+			padding: 0em 0em 0em 0em;
+		}
+		#sessions li  .more{
+			font-size: 1.5em;
+   			padding: 0em 0em 0em 0em;
+		}
+	}
+@media screen and (device-aspect-ratio: 3/2)  {
+		/* Styles */
+		#logo_holder{
+			width:75px;
+		}
 		#sessions li div{
 			font-size: .8em;
 			padding:1em .5em 0em .5em
@@ -255,7 +276,7 @@ ul{
 			font-size: 1.5em;
    			padding: 0em 0em 0em 0em;
 		}
-	}
+	}	
 #sessions .first{
 	background:#f1f1f1;
 }
@@ -323,6 +344,7 @@ button.close img{
 
 .overall-container{
 	width:100%;
+	min-height:420px;
 	height:100%;
 	overflow:hidden;
 }
@@ -333,7 +355,7 @@ button.close img{
 	border-bottom: 1px solid #d2d2d2;
 }
 .navbar .navbar-inner{
-	padding: 0px .5em;
+	padding: 0px 0em;
 	height: 100%;
 	-webkit-box-shadow:0;
 	-moz-box-shadow: 0;
@@ -394,16 +416,12 @@ button.close img{
 #Stage{
 	position:absolute;
 	margin:0 auto;
-	
 	top:0%;
-	
 	width:100%;
 	overflow:visible!important;
 }
 
-#Stage_Slash{
-	top: 6px!important;
-}
+
 #sessions .close{
 	left: 100%;
 	position: fixed;
@@ -416,24 +434,14 @@ button.close img{
      
 }
 #logo_holder{
-	-webkit-transition: opacity 500ms linear;
-     -moz-transition: opacity 500ms linear;
-     -o-transition: opacity 500ms linear;
-     -ms-transition: opacity 500ms linear;
-     transition: opacity 500ms linear;
-     transition-delay: 700ms;
-	-moz-transition-delay: 700ms; /* Firefox 4 */
-	-webkit-transition-delay: 700ms; /* Safari and Chrome */
-	-o-transition-delay: 700ms; /* Opera */
-	
-	margin: 0 auto;
+	margin: 2em auto;
 	width: 150px;
 }
 #logo_holder img{
 	opacity:0;
 }
 #logo_base{
-	margin: 4em auto;
+	margin: 0em auto;
 	max-width: 200px;
 	width: 100%;
 	
@@ -451,19 +459,19 @@ button.close img{
 }
 #logo_slash{
 	position: relative;
-	top: -103px;
+	top: -49px;
 	left: 48px;
-	width: 23px;
+	width: 24px;
 	
 	-webkit-transition: opacity 500ms linear;
      -moz-transition: opacity 500ms linear;
      -o-transition: opacity 500ms linear;
      -ms-transition: opacity 500ms linear;
      transition: opacity 500ms linear;
-     transition-delay: 1500ms;
-	-moz-transition-delay: 1500ms; /* Firefox 4 */
-	-webkit-transition-delay: 1500ms; /* Safari and Chrome */
-	-o-transition-delay: 1500ms; /* Opera */
+     transition-delay: 1600ms;
+	-moz-transition-delay: 1600ms; /* Firefox 4 */
+	-webkit-transition-delay: 1600ms; /* Safari and Chrome */
+	-o-transition-delay: 1600ms; /* Opera */
 	
 }
 #sessions li {

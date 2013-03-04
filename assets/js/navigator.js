@@ -135,8 +135,13 @@ function success(position) {
 
 }
 function fadeIn(){
-	
-	$('.overall-container').css({'height':($(window).height())+'px'});//+$(window).outerHeight )
+	if($(window).height()>=420){
+      $('.overall-container').css({'height':(($(window).height()))+'px'});
+     // $('.overall-container').css({'height':($(window).height())+'px'});
+	} else{
+		$('.overall-container').css({'height':'420px'});
+	}
+	//$('.overall-container').css({'height':($(window).height())+'px'});//+$(window).outerHeight )
 	
 	_sessions =$('#sessions li');
 	//$('.navbar').delay(1750).animate({height:'25%'}, 500);
@@ -144,8 +149,8 @@ function fadeIn(){
 	for(i=0;i<_sessions.length;i++){
 		$(_sessions[i]).removeClass('hidden');
 		//$(_sessions[i]).parent().hide(0);
-		//$(_sessions[i]).css('top', $(window).height());
-		$(_sessions[i]).css('left', -$(window).width()*2);
+		$(_sessions[i]).css('top', $(window).height());
+		//$(_sessions[i]).css('left', -$(window).width()*2);
 		
 		//	$(_sessions[i]).parent().delay(500+(500*i)).fadeIn(500);
 			$(_sessions[i]).delay(850+(150*i)).animate({top:0, left:0}, (450), 'easeOutCubic', function(){$(this).find('.close').removeClass('hidden');$(this).find('.close').fadeIn()});
@@ -242,9 +247,12 @@ function fadeIn(){
 		
 	});
 	$(window).resize(function(){
-	
+	if($(window).height()>=420){
       $('.overall-container').css({'height':(($(window).height()))+'px'});
-      $('.overall-container').css({'height':($(window).height())+'px'});
+     // $('.overall-container').css({'height':($(window).height())+'px'});
+	} else{
+		$('.overall-container').css({'height':'420px'});
+	}
     });
 }
 function error(msg) {
@@ -304,6 +312,18 @@ if (window.navigator.geolocation) {
 							///	$(this).find('.close').animate({right:'8%'},500);
 							}
 					})
+					
+					.on('movestart', function(e) {
+						// If the movestart heads off in a upwards or downwards
+						// direction, prevent it so that the browser scrolls normally.
+						if ((e.distX > e.distY && e.distX < -e.distY) ||
+						    (e.distX < e.distY && e.distX > -e.distY)) {
+							//e.preventDefault();
+							return;
+						}
+					})
+						// To allow the slide to keep step with the finger,
+					// temporarily disable transitions.
 					
 					.on('touch', function(e) {
 							if($(this).position().left<'0'){

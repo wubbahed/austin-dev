@@ -49,9 +49,12 @@ body {
 		}
 		#sessions li .more{
 			font-size: 1.2em;
-			padding:1em .5em 0em .5em
+			
 		}
 	}
+#logo_base{
+	-webkit-filter: invert(100%);
+}	
 #sessions li .summary, .location{
 	font-weight:bold;
 	width:auto;

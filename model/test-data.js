@@ -1472,47 +1472,7 @@ var thelist = function() {
         "DTEND": "20130313T020000", 
         "DTSTART": "20130312T180000"
       },
-       //Lustre Pearl Bar
-      {
-        "UID": "event_Bar", 
-        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
-        "SUMMARY": "Lustre Pearl Bar", 
-        "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130308T020000", 
-        "DTSTART": "20130307T180000"
-      },
-      {
-        "UID": "event_Bar", 
-        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
-        "SUMMARY": "Lustre Pearl Bar", 
-        "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130309T020000", 
-        "DTSTART": "20130308T180000"
-      },
-      {
-        "UID": "event_Bar", 
-        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
-        "SUMMARY": "Lustre Pearl Bar", 
-        "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130310T020000", 
-        "DTSTART": "20130309T180000"
-      },
-      {
-        "UID": "event_Bar", 
-        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
-        "SUMMARY": "Lustre Pearl Bar", 
-        "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130311T020000", 
-        "DTSTART": "20130310T180000"
-      },
-      {
-        "UID": "event_Bar", 
-        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
-        "SUMMARY": "Lustre Pearl Bar", 
-        "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130312T020000", 
-        "DTSTART": "20130311T180000"
-      },
+      
       // The Horseshoe Lounge
       {
         "UID": "event_Bar", 
