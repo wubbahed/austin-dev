@@ -14,6 +14,7 @@ body {
 #Stage{
 	position:absolute;
 	top:20%;	
+	height: 100%;
 }
 #logo_holder {
 	margin:0 auto;

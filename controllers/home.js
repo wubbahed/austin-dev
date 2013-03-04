@@ -1,6 +1,7 @@
 var template = require('../views/template-main');
 var noSession = require('../views/no-session');
 var test_data = require('../model/test-data');
+var time = require('time')(Date);
 var req = require("../node_modules/express/lib/request");
 var http = require('http');
 var url = require('url');
@@ -10,7 +11,10 @@ exports.get = function(req, res) {
 	var strTeam = "", i = 0;
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
-	date.getTimezoneOffset();
+	date.setTimezone("US/Central");
+	console.log(date.getTimezone());
+	
+	//a = new time.Date(1337324400000);
 	//	console.log(query.dotw);
 	if (query.dotw === undefined) {
 		query.dotw = '';
@@ -52,7 +56,7 @@ exports.get = function(req, res) {
 			break;
 		}
 	}
-	
+	date.setTimezone("US/Central");
 	var current_date = date.getUTCDate();
 	var current_hour = date.getHours();
 	var current_mins = date.getMinutes();
@@ -73,7 +77,7 @@ exports.get = function(req, res) {
 		var min = _startTime.substring(11, 13);
 
 		var _startDate = new Date(year, month, day, hour, min);
-
+		_startDate.setTimezone("US/Central");
 		var _endTime = teamlist.VCALENDAR.VEVENT[i].DTEND;
 		//console.log(_endTime);
 		var endyear = _endTime.substring(0, 4);
@@ -85,12 +89,13 @@ exports.get = function(req, res) {
 		var endmin = _endTime.substring(11, 13);
 
 		var _endDate = new Date(endyear, endmonth, endday, endhour, endmin);
+		_endDate.setTimezone("US/Central");
 		var _pmStart = "AM";
 		var _pmEnd = "AM";
 		
 		_newStartTime = new Date(year, month, day, hour-1, min); 
-
-
+		_newStartTime.setTimezone("US/Central");
+		
 		if ((date.getDate() == _startDate.getDate()) && date.getTime() >= _newStartTime && (date.getTime() <= _endDate.getTime() || endhour == 02 )) {
 			// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
@@ -149,7 +154,7 @@ exports.get = function(req, res) {
 			if (mintext.length == 1) {
 				mintext = '0' + mintext
 			};
-			hourtext = date.getTimezoneOffset();
+			//hourtext = date.getTimezoneOffset();
 			var _timeText =  ""+hourtext + ':' + mintext + " Left";
 			if(_started){
 				 _timeText =  "Starts in "+hourtext + ':' + mintext +"";
