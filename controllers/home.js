@@ -185,7 +185,7 @@ exports.get = function(req, res) {
 		var _night = '';
 		var _logoPath = "planb_logo.png";
 		
-		if (date.getHours() >= 16 || date.getHours() < 5) {
+		if (date.getHours() >= 18 || date.getHours() < 5) {
 			_night = '<link rel="stylesheet" href="/assets/css/night.css" />';
 			_logoPath = "planb_logo_white.png";
 		}
