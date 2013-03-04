@@ -10,7 +10,7 @@ exports.get = function(req, res) {
 	var strTeam = "", i = 0;
 	var query = require('url').parse(req.url,true).query;
 	var date = new Date();
-	console.log(query.dotw);
+//	console.log(query.dotw);
 	if(query.dotw === undefined){
 		query.dotw = '';
 	}
@@ -27,7 +27,7 @@ exports.get = function(req, res) {
 		}
 		case 'Sat':{
 			console.log("Saturday");
-			date = new Date(2013, 02, 09, 17, 23 );
+			date = new Date(2013, 02, 09, 18, 23 );
 			break;
 		}
 		case 'Sun':{
@@ -51,7 +51,7 @@ exports.get = function(req, res) {
 			break;
 		}
 	}
-	//console.log(date);
+	console.log(date);
 	var current_date = date.getUTCDate();
 	var current_hour = date.getHours();
 	var current_mins = date.getMinutes();
@@ -90,12 +90,15 @@ exports.get = function(req, res) {
 
 		// if(date >= _startDate && date <=_endDate ){ put this in once we get closer
 		
-		//console.log("_startDate.getTime():"+_startDate.getTime());
-		//console.log("currentTime:"+date.getTime());
+		console.log("date.getDate() ==_startDate.getDate()"+date.getDate() ==_startDate.getDate());
+		console.log("date.getTime() >= _startDate.getTime():"+date.getTime() >= _startDate.getTime());
+		console.log("date.getTime() <= _endDate.getTime()"+date.getTime() <= _endDate.getTime());
+		
+		
 		//console.log("_endDate.getTime():"+_endDate.getTime());
-		if ( (date.getDate() ==_startDate.getDate()) && date.getTime() >= _startDate.getTime() && date.getTime() <= _endDate.getTime()) {// && date.getTime() <= _endDate.getTime()
+		if ( (date.getDate() == _startDate.getDate()) && date.getTime() >= _startDate.getTime() && (date.getTime() <= _endDate.getTime() || endhour==02 )) {// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
-			
+			console.log("getting here");
 			if (hour > 12) {
 				hour = hour - 12;
 				_pmStart = "PM";
@@ -138,15 +141,19 @@ exports.get = function(req, res) {
 			 //  duration.value= hourtext + ':' + mintext;
 			  
 			 var _strLocation = teamlist.VCALENDAR.VEVENT[i].LOCATION.slice(0,teamlist.VCALENDAR.VEVENT[i].LOCATION.indexOf("\n"));
-			
+			var _gLocation = _strLocation.replace(/ /gi, "+");
+			console.log(_gLocation);
 			strTeam = strTeam + "<li class='hidden'>"+
-			"<button type='button' class='close' ><img src='assets/img/close.png'/></button>"+
-			"<div class='summary'>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + " </div>"+
-			
-			
-			  "<div class='starts'>  " + hour + ":" + min + _pmStart +" - "+ endhour + ":" + endmin + _pmEnd + " / "+ hourtext + ':' + mintext +" Left</div>"+
-			  "<div class='location'>" + _strLocation + "</div>" +
-			//  "<div class='more-info'> More Info: <a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>Here</a></div>" +
+			"<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>"+
+			"<div class='inital_data slide'>" +
+				"<div class='summary '>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + " </div>"+
+				"<div class='starts'>  " + hour + ":" + min + _pmStart +" - "+ endhour + ":" + endmin + _pmEnd + " / "+ hourtext + ':' + mintext +" Left</div>"+
+			  	"<div class='location'>" + _strLocation + "</div>" +
+			 " </div>" +
+			 "<div class='more slide'>" +
+			  	"<div class='more-info'><a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>More Info</a></div>" +
+			  		"<div class='map'><a class='map-address' href=' http://maps.google.com/maps?q=" + _gLocation + "'>View on Map</a></div>"+
+			 "</div>" +
 			  "</li>";
 			_numsessions++;
 		}
@@ -156,8 +163,9 @@ exports.get = function(req, res) {
 	if (_numsessions < 1) {
 		var noSession = require('../views/no-session');
 		strTeam = noSession.build( "<li>Hmmm, nothing really seems to be going on right now, time to grab a taco...</li>");
+	}else{
+		strTeam = "<ul id='sessions'>" + strTeam + "</ul>"
 	}
-	strTeam = "<ul id='sessions'>" + strTeam + "</ul>"
 	res.writeHead(200, {
 		'Content-Type' : 'text/html'
 	});

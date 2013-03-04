@@ -1,10 +1,14 @@
 exports.build = function(title, pagetitle, content, _extra) {
+	
  return ['<!doctype html>',
   '<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>{title}</title>',
-  
+  ' <meta http-equiv="pragma" content="no-cache" />',
+' <meta http-equiv="cache-control" content="no-cache" />',
+' <meta http-equiv="expires" content="-1" />',
   ' <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">',
- ' <meta name="apple-mobile-web-app-capable" content="yes" />',
+' <meta name="apple-mobile-web-app-capable" content="yes" />',
 ' <link rel="apple-touch-icon" href="touch-icon-iphone.png" />',
+
 '<link rel="apple-touch-icon" sizes="72x72" href="assets/img/touch-icon-ipad.png" />',
 '<link rel="apple-touch-icon" sizes="114x114" href="assets/img/touch-icon-iphone-retina.png" />',
 '<link rel="apple-touch-icon" sizes="144x144" href="assets/img/touch-icon-ipad-retina.png" />',
@@ -22,7 +26,11 @@ exports.build = function(title, pagetitle, content, _extra) {
    			'<div class="top-bar">',
      			'<div class="brand">{pagetitle}</div>',
      			'</div>',
-   				'<div id="Stage" class="EDGE-41346455">',
+   				'<div id="Stage">',
+   					'<div id="logo_holder">',
+						'<img id="logo_base" src="assets/img/planb_logo.png"/>',
+						'<img id="logo_slash" src="assets/img/slash.png"/>',
+					'</div>',
 				'</div>',
       		'</div>',
    		'</div>',
@@ -31,21 +39,22 @@ exports.build = function(title, pagetitle, content, _extra) {
   '</div>',
   
  // ' <script src="/assets/js/jquery.js"></script>',
-'<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>',
+	//'<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>',
+	'  <script src="/assets/js/jquery.js"></script>',
 //  '  <script src="/assets/js/bootstrap-transition.js"></script>',
-  ' <script src="/assets/js/bootstrap-modal.js"></script>',
+  	' <script src="/assets/js/bootstrap-modal.js"></script>',
  // '  <script src="/assets/js/bootstrap-dropdown.js"></script>',
  // '  <script src="/assets/js/bootstrap-scrollspy.js"></script>',
  // '  <script src="/assets/js/bootstrap-tab.js"></script>',
-  '  <script src="/assets/js/bootstrap-tooltip.js"></script>',
+  	'  <script src="/assets/js/bootstrap-tooltip.js"></script>',
  // '  <script src="/assets/js/bootstrap-popover.js"></script>',
-  '  <script src="/assets/js/bootstrap-button.js"></script>', 
-  //'  <script src="/assets/js/bootstrap-collapse.js"></script>',
-  '  <script src="/assets/js/jquery.color.js"></script>',
- '  <script src="/assets/js/jquery.flippy.min.js"></script>',
- ' <script src="/assets/js/planb_edgePreload.js"></script>',
-  ' <script src="/assets/js/navigator.js"></script>',
-
+  	'  <script src="/assets/js/bootstrap-button.js"></script>', 
+	'  <script src="/assets/js/jquery.color.js"></script>',
+  	'  <script src="/assets/js/jquery.event.move.js"></script>',
+    '  <script src="/assets/js/jquery.event.swipe.js"></script>',
+	'  <script src="/assets/js/jquery.easing.1.3.js"></script>',
+  	'  <script src="/assets/js/navigator.js"></script>',
+//'  <script src="/assets/js/planb_edgePreload.js"></script>',
   '</html>'
  ].join('\n')
  .replace(/\{title\}/g, title)

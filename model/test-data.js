@@ -1031,7 +1031,529 @@ var thelist = function() {
         "LOCATION": "Austin Convention Center Room 12AB\n500 E Cesar Chavez St", 
         "DTEND": "20130312T180000", 
         "DTSTART": "20130312T170000"
-      }
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
+        "SUMMARY": "Bar Ilegal", 
+        "LOCATION": "609 Davis St Rainey St.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
+        "SUMMARY": "Bar Ilegal", 
+        "LOCATION": "609 Davis St Rainey St.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
+        "SUMMARY": "Bar Ilegal", 
+        "LOCATION": "609 Davis St Rainey St.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
+        "SUMMARY": "Bar Ilegal", 
+        "LOCATION": "609 Davis St Rainey St.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
+        "SUMMARY": "Bar Ilegal", 
+        "LOCATION": "609 Davis St Rainey St.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
+        "SUMMARY": "Bar Ilegal", 
+        "LOCATION": "609 Davis St Rainey St.", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },
+	  //weather Up
+	  {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
+        "SUMMARY": "Weather Up", 
+        "LOCATION": "1808 E Cesar Chavez St", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
+        "SUMMARY": "Weather Up", 
+        "LOCATION": "1808 E Cesar Chavez St", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
+        "SUMMARY": "Weather Up", 
+        "LOCATION": "1808 E Cesar Chavez St", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
+        "SUMMARY": "Weather Up", 
+        "LOCATION": "1808 E Cesar Chavez St", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
+        "SUMMARY": "Weather Up", 
+        "LOCATION": "1808 E Cesar Chavez St", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
+        "SUMMARY": "Weather Up", 
+        "LOCATION": "1808 E Cesar Chavez St", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },		
+      // Easy Tiger
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
+        "SUMMARY": "Easy Tiger", 
+        "LOCATION": "709 E 6th St", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
+        "SUMMARY": "Easy Tiger", 
+        "LOCATION": "709 E 6th St", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
+        "SUMMARY": "Easy Tiger", 
+        "LOCATION": "709 E 6th St", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
+        "SUMMARY": "Easy Tiger", 
+        "LOCATION": "709 E 6th St", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
+        "SUMMARY": "Easy Tiger", 
+        "LOCATION": "709 E 6th St", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
+        "SUMMARY": "Easy Tiger", 
+        "LOCATION": "709 E 6th St", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },
+       // Clive Bar
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
+        "SUMMARY": "Clive Bar", 
+        "LOCATION": "609 Davis St at Rainey St", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
+        "SUMMARY": "Clive Bar", 
+        "LOCATION": "609 Davis St at Rainey St", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
+        "SUMMARY": "Clive Bar", 
+        "LOCATION": "609 Davis St at Rainey St", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
+        "SUMMARY": "Clive Bar", 
+        "LOCATION": "609 Davis St at Rainey St", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
+        "SUMMARY": "Clive Bar", 
+        "LOCATION": "609 Davis St at Rainey St", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
+        "SUMMARY": "Clive Bar", 
+        "LOCATION": "609 Davis St at Rainey St", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },			
+      //Burnside's Tavern
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
+        "SUMMARY": "Burnside's Tavern", 
+        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
+        "SUMMARY": "Burnside's Tavern", 
+        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
+        "SUMMARY": "Burnside's Tavern", 
+        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
+        "SUMMARY": "Burnside's Tavern", 
+        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
+        "SUMMARY": "Burnside's Tavern", 
+        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
+        "SUMMARY": "Burnside's Tavern", 
+        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },
+      //Malverde
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
+        "SUMMARY": "Malverde", 
+        "LOCATION": "400 W. 2nd St. Guadalupe St.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
+        "SUMMARY": "Malverde", 
+        "LOCATION": "400 W. 2nd St. Guadalupe St.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
+        "SUMMARY": "Malverde", 
+        "LOCATION": "400 W. 2nd St. Guadalupe St.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
+        "SUMMARY": "Malverde", 
+        "LOCATION": "400 W. 2nd St. Guadalupe St.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
+        "SUMMARY": "Malverde", 
+        "LOCATION": "400 W. 2nd St. Guadalupe St.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
+        "SUMMARY": "Malverde", 
+        "LOCATION": "400 W. 2nd St. Guadalupe St.", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },
+      //Bangers
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
+        "SUMMARY": "Banger's Sausage House & Beer Garden", 
+        "LOCATION": "81 Rainey", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
+        "SUMMARY": "Banger's Sausage House & Beer Garden", 
+        "LOCATION": "81 Rainey", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
+        "SUMMARY": "Banger's Sausage House & Beer Garden", 
+        "LOCATION": "81 Rainey", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
+        "SUMMARY": "Banger's Sausage House & Beer Garden", 
+        "LOCATION": "81 Rainey", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
+        "SUMMARY": "Banger's Sausage House & Beer Garden", 
+        "LOCATION": "81 Rainey", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
+        "SUMMARY": "Banger's Sausage House & Beer Garden", 
+        "LOCATION": "81 Rainey", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },
+      //Rio Rita
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
+        "SUMMARY": "Rio Rita", 
+        "LOCATION": "1308 E 6th St", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
+        "SUMMARY": "Rio Rita", 
+        "LOCATION": "1308 E 6th St", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
+        "SUMMARY": "Rio Rita", 
+        "LOCATION": "1308 E 6th St", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
+        "SUMMARY": "Rio Rita", 
+        "LOCATION": "1308 E 6th St", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
+        "SUMMARY": "Rio Rita", 
+        "LOCATION": "1308 E 6th St", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
+        "SUMMARY": "Rio Rita", 
+        "LOCATION": "1308 E 6th St", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },
+      //Lustre Pearl Bar
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }, 
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130313T020000", 
+        "DTSTART": "20130312T180000"
+      },
+       //Lustre Pearl Bar
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
+        "SUMMARY": "Lustre Pearl Bar", 
+        "LOCATION": "97 Rainey St. Driskill St.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      // The Horseshoe Lounge
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
+        "SUMMARY": "The Horseshoe Lounge", 
+        "LOCATION": "2034 S. Lamar Blvd.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
+        "SUMMARY": "The Horseshoe Lounge", 
+        "LOCATION": "2034 S. Lamar Blvd.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
+        "SUMMARY": "The Horseshoe Lounge", 
+        "LOCATION": "2034 S. Lamar Blvd.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
+        "SUMMARY": "The Horseshoe Lounge", 
+        "LOCATION": "2034 S. Lamar Blvd.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
+        "SUMMARY": "The Horseshoe Lounge", 
+        "LOCATION": "2034 S. Lamar Blvd.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
     ], 
     "X-WR-TIMEZONE": "US/Central", 
     "VERSION": "2.0", 

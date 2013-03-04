@@ -24,6 +24,9 @@ body {
 #sessions .third{
 	background:#242424;
 }
+#sessions .starts{
+	display:none;
+}
 #sessions  li{
 	border-top:none;
 	border-bottom:none;
@@ -37,10 +40,31 @@ body {
 	font-size: 0.8em;
 	color:#fff;
 }
-.summary{
+@media screen and (device-aspect-ratio: 2/3)  {
+		/* Styles */
+		
+		#sessions li  .summary{	
+			padding: 1em 0em 0em 0em;
+			font-size: .8em;
+		}
+		#sessions li .more{
+			font-size: 1.2em;
+			padding:1em .5em 0em .5em
+		}
+	}
+#sessions li .summary, .location{
 	font-weight:bold;
 	width:auto;
+	font-size:1em;
+	margin: 0 auto;
+	width: 90%;
 	
+}
+#sessions li .location{
+	font-weight:normal;
+	font-size:.9em;
+	margin:.5em 0em;
+	padding:.5em 0em;
 }
 #title{
 	background-position: 0 0px;

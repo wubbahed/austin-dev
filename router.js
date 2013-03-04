@@ -22,15 +22,15 @@ exports.get = function(req, res) {
                 }               
                 break;
             }
-            else if (/\.(css)$/.test(path)){
+             if (/\.(css)$/.test(path)){
 			    res.writeHead(200, {'Content-Type': 'text/css'});
 			    res.write(fs.readFileSync(__dirname + path, 'utf8')); // <--- add this line
 			    res.end();
 			    break;
             }
-             else if (/\.(png|jpg)$/.test(path)){
+              if (/\.(png|jpg)$/.test(path)){
              	
-			    res.writeHead(200, {'Content-Type': 'text/'+ (path.substr(-3) === '.png' ? 'png' : 'jpg')});
+			    res.writeHead(200, {'Content-Type': 'image/'+ (path.substr(-3) === '.png' ? 'png' : 'jpg')});
 			    var img = fs.readFileSync(__dirname + path);
 			    res.end(img, 'binary');
 			    break;

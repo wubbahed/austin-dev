@@ -59,7 +59,18 @@
 	{'location':'The North Door 501 N I-35','lat':'30.264948', 'long':'-97.734193'},
 	{'location':'Mellow Johnny\u2019s Bike Shop 400 Nueces St','lat':'30.268146', 'long':'-97.749242'},
 	{'location':'Courtyard Marriott Rio Grande Ballroom 300 E 4th St','lat':'30.265731', 'long':'-97.740560'},
-	{'location':'Courtyard Marriott Brazos 300 E 4th St','lat':'30.265731', 'long':'-97.740560'}
+	{'location':'Courtyard Marriott Brazos 300 E 4th St','lat':'30.265731', 'long':'-97.740560'},
+	//bars
+	{'location':'609 Davis St Rainey St., Austin, TX ','lat':'30.260026', 'long':'-97.738756'},
+	{'location':'1808 E Cesar Chavez St','lat':'30.257383', 'long':'-97.724951'},
+	{'location':'709 E 6th St','lat':'30.265893', 'long':'-97.735703'},
+	{'location':'609 Davis St at Rainey St','lat':'30.260026', 'long':'-97.738756'},
+	{'location':'413 E. 6th Street 6th Between Trinity and Neches','lat':'30.266991', 'long':'-97.73884'},
+	{'location':'400 W. 2nd St. Guadalupe St.','lat':'30.265423', 'long':'-97.747778'},
+	{'location':'81 Rainey','lat':'30.25894', 'long':'-97.738475'},
+	{'location':'1308 E 6th St','lat':'30.263953', 'long':'-97.728736'},
+	{'location':'97 Rainey St. Driskill St.','lat':'30.260758', 'long':'-97.737883'},
+	{'location':'2034 S. Lamar Blvd.','lat':'30.248942', 'long':'-97.768928'},
 	]}
 	
 
@@ -85,6 +96,7 @@ function success(position) {
   var _long =-97.742027;//position.coords.longitude; //-97.740418;//p-97.74019;
   var _okVenues = [];
   var _sessions = $('.location');
+  var _locationArr = $('.map-address');
   var _totalSessions = 0;
   var _li  =[];
   // first sort through the sessions
@@ -98,12 +110,13 @@ function success(position) {
 			
 			if( locations.locations[j].location.indexOf(_shortName) >-1){
 				var _distance = distance( _lat, _long, Number(locations.locations[j].lat), Number(locations.locations[j].long),'K');
-				_li.push($(_sessions[i]).parent());
-				$(_sessions[i]).parent().attr('distance',_distance );
+				_li.push($(_sessions[i]).parent().parent());
+				$(_sessions[i]).parent().parent().attr('distance',_distance );
+				$(_locationArr[i]).attr('href',' http://maps.google.com/maps?q='+locations.locations[j].lat+','+locations.locations[j].long)
 				break;
 			}
 		}
-		$(_sessions[i]).parent().removeClass('hidden');
+		$(_sessions[i]).parent().parent().removeClass('hidden');
 	
 	}
 	
@@ -122,28 +135,20 @@ function success(position) {
 
 }
 function fadeIn(){
-	 $('#sessions li').click(function(){
-  // 	console.log(this);
-	 	$(this).flippy({
-		    content:"Hi !",
-		    direction:"LEFT",
-		    duration:"750",
-		    color_target:'#00000'
-	 	});
- 	});
-   
+	
 	$('.overall-container').css({'height':($(window).height())+'px'});//+$(window).outerHeight )
 	
-	_sessions = $('.location');
+	_sessions =$('#sessions li');
 	//$('.navbar').delay(1750).animate({height:'25%'}, 500);
 	//$('#Stage').delay(1750).animate({top:'0%'}, 500);
 	for(i=0;i<_sessions.length;i++){
-		$(_sessions[i]).parent().removeClass('hidden');
+		$(_sessions[i]).removeClass('hidden');
 		//$(_sessions[i]).parent().hide(0);
-		$(_sessions[i]).parent().css('top', $(window).height());
+		//$(_sessions[i]).css('top', $(window).height());
+		$(_sessions[i]).css('left', -$(window).width()*2);
 		
 		//	$(_sessions[i]).parent().delay(500+(500*i)).fadeIn(500);
-			$(_sessions[i]).parent().delay(850+(150*i)).animate({top:0}, (450), 'easeOutCubic');
+			$(_sessions[i]).delay(850+(150*i)).animate({top:0, left:0}, (450), 'easeOutCubic', function(){$(this).find('.close').removeClass('hidden');$(this).find('.close').fadeIn()});
 		
 		//}
 	}
@@ -151,35 +156,95 @@ function fadeIn(){
 	//	$(_sessions[1]).parent().animate({ backgroundColor: "#e3e3e3" }, 500);
 	//	$(_sessions[2]).parent().animate({ backgroundColor: "#cccccc" }, 500);
 		
-		$(_sessions[0]).parent().addClass('first');
-		$(_sessions[1]).parent().addClass('second');
-		$(_sessions[2]).parent().addClass('third');
-		
+		$(_sessions[0]).addClass('first');
+		$(_sessions[1]).addClass('second');
+		$(_sessions[2]).addClass('third');
+		//add support for swiping
+			var slides = jQuery('#sessions li')
+					var width = slides[0].width*.5; 
+					slides
+					.on('swiperight', function(e) {
+							if($(this).position().left<'0'){
+								$(this).animate({left:0},500);
+							//	$(this).find('.close').animate({right:'52%'},500);
+							} 
+					})
+					.on('swipeleft', function(e) {
+						if($(this).position().left==0){
+								$(this).animate({left:'-100%'},500);
+							//	$(this).find('.close').animate({right:'8%'},500);
+							}
+					})
+					.on('click', function(e) {
+							if($(this).position().left<'0'){
+								$(this).animate({left:0},500);
+							//	$(this).find('.close').animate({right:'52%'},500);
+							} else{
+								$(this).animate({left:'-100%'},500);
+							///	$(this).find('.close').animate({right:'8%'},500);
+							}
+					})
+					
+					.on('touch', function(e) {
+							if($(this).position().left<'0'){
+								$(this).animate({left:0},500);
+							//	$(this).find('.close').animate({right:'52%'},500);
+							} else{
+								$(this).animate({left:'-100%'},500);
+								//$(this).find('.close').animate({right:'8%'},500);
+							}
+					})	
 	$('.close').click(function (e) {
 	  e.preventDefault();
+	 
+  	
+	 $(this).slideUp(500);
 	  var _newStart=0;
-	  var _sessions = $('.location');
+	  var _sessions = $('#sessions li').not('.hidden');
+	  
 	    for(i=0;i<_sessions.length;i++){
-	  	if( $(_sessions[i]).parent().hasClass("first")){
-	  		_newStart = i+1;
-	  		console.log("newStart: "+_newStart);
-	  		$(_sessions[i]).parent().removeClass('first');
-	  		break;
-	  	}
+	    	
+		  	if( $(this).parent().hasClass("first") && ( $(_sessions[i]).hasClass("first"))){
+		  		 $(this).parent().removeClass('first');
+		  		 $(_sessions[i]).slideUp(500 ,function() {
+   				 // Animation complete.
+   				  $(_sessions[i]).addClass('hidden');
+  				});	
+		  		$(_sessions[i+1]).removeClass('second');
+		  		$(_sessions[i+1]).addClass('first');
+		  		$(_sessions[i+2]).removeClass('third');
+		  		$(_sessions[i+2]).addClass('second');
+		  		$(_sessions[i+3]).addClass('third');
+		  		break;
+		  	} else if($(this).parent().hasClass("second")&& ($(_sessions[i]).hasClass("second"))){
+		  		 $(this).parent().removeClass('second');
+		  		 $(_sessions[i]).slideUp(500 ,function() {
+   				 // Animation complete.
+   				  $(_sessions[i]).addClass('hidden');
+  				});	
+		  		$(_sessions[i+1]).removeClass('third')
+		  		$(_sessions[i+1]).addClass('second');
+		  		$(_sessions[i+2]).addClass('third');
+		  		break;
+		  	} else if($(this).parent().hasClass("third")&& ( $(_sessions[i]).hasClass("third"))){
+		  	 $(this).parent().removeClass('third');
+		  		 $(_sessions[i]).slideUp(500 ,function() {
+   				 // Animation complete.
+   				  $(_sessions[i]).addClass('hidden');
+  				});	
+		  		$(_sessions[i+1]).addClass('third');
+		  		break;
+		  	}
+	  	
 	  }
-	  	$(_sessions[_newStart]).parent().addClass('first');
-	 	$(_sessions[_newStart+1]).parent().addClass('second');
-		$(_sessions[_newStart+2]).parent().addClass('third');
-	  $(this).parent().slideUp( 500, 'easeOutBounce');
-	  
-	  
-	
+	 
+		
 		
 	});
 	$(window).resize(function(){
-		console.log("resizing the window");
+	
       $('.overall-container').css({'height':(($(window).height()))+'px'});
-      $('.overall-container').css({'height':(($(window).height()+$(window).outerHeight ))+'px'});
+      $('.overall-container').css({'height':($(window).height())+'px'});
     });
 }
 function error(msg) {
@@ -188,39 +253,68 @@ function error(msg) {
    console.log(arguments);
 }	
 	
+	window.addEventListener('unload', function() { $('body').hide(); } );
 	
-	
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(success, error, {'enableHighAccuracy':true,'timeout':10000,'maximumAge':50});
+if (window.navigator.geolocation) {
+  window.navigator.geolocation.getCurrentPosition(success, error, {'enableHighAccuracy':true,'timeout':7000,'maximumAge':0});
 } else {
   error('not supported');
   
 }
- window.addEventListener("load",function() {
- 
-   $('#sessions li').click(function(e){
-   	console.log("BWAHAAAAA"+this);
-	 	$(this).flippy({
-		    content:"Hi !",
-		    direction:"LEFT",
-		    duration:"750"
-	 	});
- 	});
- });
-function hideAddressBar()
-{
-  if(!window.location.hash)
-  {
-      if(document.height < window.outerHeight)
-      {
-          document.body.style.height = (window.outerHeight ) + 'px';
-      }
- 
-      setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
-  }
-}
- 
-window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
-window.addEventListener("orientationchange", hideAddressBar );
 
+
+//	window.addEventListener("orientationchange", hideAddressBar );
+	 
+	//window.addEventListener("load", function(){
+		jQuery(document).ready(function() {
+		//'  <script src="/assets/js/planb_edgePreload.js"></script>',
+		//window.addEventListener("orientationchange", hideAddressBar );
+		$('#logo_holder img').css({ 'opacity' : 1.0 });
+		//$('#logo_main').css({ 'opacity' : 1.0 });
+		//$('#logo_holder').fadeIn('fast');
+		//console.log($('#logo-base').css(opacity));
+		//$('#logo-slash').css({ 'opacity' : 1.0 });
+		if (window.navigator.geolocation) {
+		  window.navigator.geolocation.getCurrentPosition(success, error, {'enableHighAccuracy':true,'timeout':7000,'maximumAge':0});
+		} else {
+		  error('not supported');
+		  
+		}
+					var slides = jQuery('#sessions li')
+					var width = slides[0].width*.5; 
+					slides
+					.on('swiperight', function(e) {
+							if($(this).position().left<'0'){
+								$(this).animate({left:0},500);
+							//	$(this).find('.close').animate({right:'52%'},500);
+							} 
+					})
+					.on('swipeleft', function(e) {
+						if($(this).position().left==0){
+								$(this).animate({left:'-100%'},500);
+							//	$(this).find('.close').animate({right:'8%'},500);
+							}
+					})
+					.on('click', function(e) {
+							if($(this).position().left<'0'){
+								$(this).animate({left:0},500);
+							//	$(this).find('.close').animate({right:'52%'},500);
+							} else{
+								$(this).animate({left:'-100%'},500);
+							///	$(this).find('.close').animate({right:'8%'},500);
+							}
+					})
+					
+					.on('touch', function(e) {
+							if($(this).position().left<'0'){
+								$(this).animate({left:0},500);
+							//	$(this).find('.close').animate({right:'52%'},500);
+							} else{
+								$(this).animate({left:'-100%'},500);
+								//$(this).find('.close').animate({right:'8%'},500);
+							}
+					})
+					
+					
+	});
 }(window.jQuery);
