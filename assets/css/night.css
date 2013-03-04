@@ -52,15 +52,12 @@ body {
 			
 		}
 	}
-#logo_base{
-	-webkit-filter: invert(100%);
-}	
+	
 #sessions li .summary, .location{
 	font-weight:bold;
-	width:auto;
 	font-size:1em;
 	margin: 0 auto;
-	width: 90%;
+	width: 80%;
 	
 }
 #sessions li .location{

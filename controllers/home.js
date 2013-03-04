@@ -147,7 +147,9 @@ exports.get = function(req, res) {
 			//console.log(_gLocation);
 			strTeam = strTeam + "<li class='hidden'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			//"<div class='inital_data slide'>" +
-			"<div class='summary '><a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + "</a> </div>" + "<div class='starts'>  " + hour + ":" + min + _pmStart + " - " + endhour + ":" + endmin + _pmEnd + " / " + hourtext + ':' + mintext + " Left</div>" + "<div class='location'><a class='map-address' href=' http://maps.google.com/maps?q=" + _gLocation + "'>" + _strLocation + "</a></div>" +
+			"<div class='summary '><a href='" + teamlist.VCALENDAR.VEVENT[i].URL + "'>" + teamlist.VCALENDAR.VEVENT[i].SUMMARY + "</a> </div>" +
+			 "<div class='starts'>  " + hour + ":" + min + _pmStart + " - " + endhour + ":" + endmin + _pmEnd + " / " + hourtext + ':' + mintext + " Left</div>" + 
+			 "<div class='location'><a class='map-address' href=' http://maps.google.com/maps?q=" + _gLocation + "'>" + _strLocation + "</a></div>" +
 			// " </div>" +
 
 			"</li>";
@@ -169,11 +171,13 @@ exports.get = function(req, res) {
 	} else {
 		strTeam = "<ul id='sessions'>" + strTeam + "</ul>"
 		var _night = '';
-		;
+		var _logoPath = "planb_logo.png";
+		
 		if (date.getHours() >= 16 || date.getHours() < 5) {
 			_night = '<link rel="stylesheet" href="/assets/css/night.css" />';
+			_logoPath = "planb_logo_white.png";
 		}
-		res.write(template.build("R/GA - Plan B", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night));
+		res.write(template.build("R/GA - Plan B", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night, _logoPath));
 		res.end();
 	}
 }

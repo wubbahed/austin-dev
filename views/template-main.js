@@ -1,4 +1,4 @@
-exports.build = function(title, pagetitle, content, _extra) {
+exports.build = function(title, pagetitle, content, _extra, logo_path) {
 	
  return ['<!doctype html>',
   '<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>{title}</title>',
@@ -28,7 +28,7 @@ exports.build = function(title, pagetitle, content, _extra) {
      			'</div>',
    				'<div id="Stage">',
    					'<div id="logo_holder">',
-						'<img id="logo_base" src="assets/img/planb_logo.png"/>',
+						'<img id="logo_base" src="assets/img/{logo_path}"/>',
 						'<img id="logo_slash" src="assets/img/slash.png"/>',
 					'</div>',
 				'</div>',
@@ -61,6 +61,7 @@ exports.build = function(title, pagetitle, content, _extra) {
  .replace(/\{title\}/g, title)
  .replace(/\{pagetitle\}/g, pagetitle)
  .replace(/\{content\}/g, content)
- .replace(/\{extra\}/g, _extra);
+ .replace(/\{extra\}/g, _extra)
+ .replace(/\{logo_path}/g, logo_path);
 }
  
