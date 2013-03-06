@@ -34,9 +34,11 @@
 	{'location':'Four Seasons San Jacinto Ballroom 98 San Jacinto Blvd','lat':'30.262534','long':'-97.742907'},
 	{'location':'Omni Downtown Longhorn 700 San Jacinto','lat':'30.268876','long':'-97.740389'},
 	{'location':'Omni Downtown Lone Star 700 San Jacinto','lat':'30.268876','long':'-97.740389'},
+	{'location':'Omni Downtown Austin 700 San Jacinto','lat':'30.268876','long':'-97.740389'},
 	{'location':'Driskill Hotel Maximilian 604 Brazos St','lat':'30.26801','long':'-97.741829'},
 	{'location':'AT&T Conference Center Classroom 105 1900 University Ave','lat':'30.281994','long':'-97.74019'},
 	{'location':'AT&T Conference Center Classroom 104 1900 University Ave','lat':'30.281994','long':'-97.74019'},
+	{'location':'AT&T Conference Center Classroom 106 1900 University Ave','lat':'30.281994','long':'-97.74019'},
 	{'location':'AT&T Conference Center Classroom 204 1900 University Ave','lat':'30.281994','long':'-97.74019'},
 	{'location':'AT&T Conference Center Classroom 202 1900 University Ave','lat':'30.281994','long':'-97.74019'},
 	
@@ -194,7 +196,7 @@
 		$(_sessions[1]).addClass('second');
 		$(_sessions[2]).addClass('third');
 		//add support for swiping
-		console.log("sessions length on start: "+_sessions.length);
+		//console.log("sessions length on start: "+_sessions.length);
 		
 		$('.close').click(function(e) {
 			e.preventDefault();
@@ -243,7 +245,7 @@
 					break;
 				}
 			}
-			console.log(_sessions.length);
+		//	console.log(_sessions.length);
 			if(_sessions.length<5){
 				//do nothing for now
 			//	$(_sessions).find(".close").addClass("hidden");
@@ -256,7 +258,7 @@
 	function error(msg) {
 	 // $('li').removeClass("hidden");
 	  	fadeIn();
-	   console.log(arguments);
+	  // console.log(arguments);
 	}	
 		
 	
@@ -289,7 +291,7 @@
 
 	
 
-    	$("#sessionsw").bind('swipedown',function(){console.log("swiping down")});
+    	//$("#sessionsw").bind('swipedown',function(){console.log("swiping down")});
      
 			/*		var slides = jQuery('#sessions li')
 					var width = slides[0].width*.5; 

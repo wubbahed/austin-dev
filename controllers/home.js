@@ -231,7 +231,7 @@ exports.get = function(req, res) {
 			_night = '<link rel="stylesheet" href="/assets/css/night.css" />';
 			_logoPath = "planb_logo_white.png";
 		}
-		res.write(template.build("R/GA - Plan B", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night, _logoPath));
+		res.write(template.build("PlanB - R/GA", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night, _logoPath));
 		res.end();
 	}
 }
