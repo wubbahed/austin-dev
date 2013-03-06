@@ -67,7 +67,7 @@
 	{'location':'1808 E Cesar Chavez St','lat':'30.257383', 'long':'-97.724951'},
 	{'location':'709 E 6th St','lat':'30.265893', 'long':'-97.735703'},
 	{'location':'609 Davis St at Rainey St','lat':'30.260026', 'long':'-97.738756'},
-	{'location':'413 E. 6th Street 6th Between Trinity and Neches','lat':'30.266991', 'long':'-97.73884'},
+	{'location':'413 E. 6th St. btw Trinity and Neches','lat':'30.266991', 'long':'-97.73884'},
 	{'location':'400 W. 2nd St. Guadalupe St.','lat':'30.265423', 'long':'-97.747778'},
 	{'location':'81 Rainey','lat':'30.25894', 'long':'-97.738475'},
 	{'location':'1308 E 6th St','lat':'30.263953', 'long':'-97.728736'},
@@ -111,6 +111,7 @@
 		var _lat = position.coords.latitude;
 		// 30.281994;//30.262725;//
 		var _long = position.coords.longitude;
+		console.log("accuracy: "+ position.coords.accuracy);
 		//-97.740418;//p-97.74019;
 		var _okVenues = [];
 		var _sessions = $('.location');
@@ -126,10 +127,10 @@
 			var _shortName = $(_sessions[i]).text();
 			_li.push($(_sessions[i]).parent());
 			//.slice(0,_sessions[i].innerHTML.indexOf("\n"));
-			console.log(_shortName);
+		//	console.log(_shortName);
 			//calculate the distance between current location and venue and add it to the parent li
 			for ( j = 0; j < locations.locations.length; j++) {
-					console.log(locations.locations[j].location.indexOf(_shortName));
+				//	console.log(locations.locations[j].location.indexOf(_shortName));
 				if (locations.locations[j].location.indexOf(_shortName) > -1) {
 					var _distance = distance(_lat, _long, Number(locations.locations[j].lat), Number(locations.locations[j].long), 'K');
 					//_li.push($(_sessions[i]).parent());
@@ -271,6 +272,7 @@
 		
 		if (window.navigator.geolocation) {
 		  window.navigator.geolocation.getCurrentPosition(success, error, {'enableHighAccuracy':true,'timeout':7000,'maximumAge':0});
+		  // window.navigator.geolocation.watchPosition(success, error, {'enableHighAccuracy':true,'timeout':7000,'maximumAge':0});
 		} else {
 		  error('not supported');
 		  

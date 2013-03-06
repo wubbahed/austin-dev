@@ -1232,7 +1232,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
-        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
         "DTEND": "20130308T020000", 
         "DTSTART": "20130307T180000"
       },
@@ -1240,7 +1240,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
-        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
         "DTEND": "20130309T020000", 
         "DTSTART": "20130308T180000"
       },
@@ -1248,7 +1248,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
-        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
         "DTEND": "20130310T020000", 
         "DTSTART": "20130309T180000"
       },
@@ -1256,7 +1256,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
-        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
         "DTEND": "20130311T020000", 
         "DTSTART": "20130310T180000"
       },
@@ -1264,7 +1264,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
-        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
         "DTEND": "20130312T020000", 
         "DTSTART": "20130311T180000"
       }, 
@@ -1272,7 +1272,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
-        "LOCATION": "413 E. 6th Street 6th Between Trinity and Neches", 
+        "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
         "DTEND": "20130313T020000", 
         "DTSTART": "20130312T180000"
       },

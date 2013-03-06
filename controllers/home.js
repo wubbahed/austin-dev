@@ -12,7 +12,7 @@ exports.get = function(req, res) {
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
 	var tzOffset = date.getTimezoneOffset;
-	console.log(date.getDate());
+	//console.log(date.getDate());
 	if(date.getTimezoneOffset() === 0){
 		if(date.getDate()<11){
 			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-6, date.getMinutes());
@@ -20,7 +20,7 @@ exports.get = function(req, res) {
 			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-5, date.getMinutes());
 		}
 	}
-	console.log(date.getTimezoneOffset());
+	//console.log(date.getTimezoneOffset());
 	//a = new time.Date(1337324400000);
 	//	console.log(query.dotw);
 	if (query.dotw === undefined) {
@@ -28,37 +28,37 @@ exports.get = function(req, res) {
 	}
 	switch(query.dotw) {
 		case 'Thu': {
-			console.log("Thursday");
+			//console.log("Thursday");
 			date = new Date(2013, 02, 07, date.getHours(), date.getMinutes());
 			break;
 		}
 		case 'Fri': {
-			console.log("Friday");
-			date = new Date(2013, 02, 08,  date.getHours(), date.getMinutes());
+			//console.log("Friday");
+			date = new Date(2013, 02, 08,  09, 17);
 			break;
 		}
 		case 'Sat': {
-			console.log("Saturday");
+			//console.log("Saturday");
 			date = new Date(2013, 02, 09, 18, 23);
 			break;
 		}
 		case 'Sun': {
-			console.log("Sunday");
+			//console.log("Sunday");
 			date = new Date(2013, 02, 10, date.getHours(), date.getMinutes());
 			break;
 		}
 		case 'Mon': {
-			console.log("Monday");
+			//console.log("Monday");
 			date = new Date(2013, 02, 11, date.getHours(), date.getMinutes());
 			break;
 		}
 		case 'Tue': {
-			console.log("Tuesday");
+			//console.log("Tuesday");
 			date = new Date(2013, 02, 12, date.getHours(), date.getMinutes());
 			break;
 		}
 		case '': {
-			console.log("default");
+			//console.log("default");
 			date = new Date();
 			break;
 		}
@@ -193,7 +193,18 @@ exports.get = function(req, res) {
 	res.writeHead(200, {
 		'Content-Type' : 'text/html'
 	});
-
+	function shuffle(array) {
+	    var tmp, current, top = array.length;
+	
+	    if(top) while(--top) {
+	    	current = Math.floor(Math.random() * (top + 1));
+	    	tmp = array[current];
+	    	array[current] = array[top];
+	    	array[top] = tmp;
+	    }
+	
+	    return array;
+	}
 	if (_numsessions < 1) {
 
 		//strTeam = noSession.build("<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>");
@@ -201,28 +212,34 @@ exports.get = function(req, res) {
 		res.end();
 
 	} else {
-		strTeam = strTeam + "<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
+			var _funnyStuff = [ "<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Or you could just get an early start on your hangover. </div>" +
-			"</li>"+
+			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Somewhere Lone Star and Tecate are doing a panel together.  </div>" +
-			"</li>"+
+			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Some fliers outside the convention center need proofreading.</div>" +
-			"</li>"+
+			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>ASHLEIGH BANFIELD IS FLIPPING BURGERS AT THE CNN GRILL!!!</div>" +
-			"</li>"+
+			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Is that brisket in your teeth? You might want to take care of that. </div>" +
-			"</li>"+
+			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>You know music doesn't start till next week, right?</div>" +
-			"</li>"+
+			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Are you this picky at the Four Season breakfast Buffett?</div>" +
-			"</li>";
-			
+			"</li>"];
+			console.log(_funnyStuff);
+			_funnyStuff = shuffle(_funnyStuff);
+				console.log(_funnyStuff);
+			for (f=0;f<4;f++){
+				strTeam = strTeam +	_funnyStuff[f];
+			}
+		
 		strTeam = "<ul id='sessions'>" + strTeam + "</ul>"
 		var _night = '';
 		var _logoPath = "planb_logo.png";
