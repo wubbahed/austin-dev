@@ -1,5 +1,6 @@
 var url = require('url');
 var fs = require('fs');
+
 exports.get = function(req, res) {
  req.requrl = url.parse(req.url, true);
  var path = req.requrl.pathname;
@@ -18,25 +19,35 @@ exports.get = function(req, res) {
                     res.write(fs.readFileSync(__dirname + path, swf ? 'binary' : 'utf8'), swf ? 'binary' : 'utf8');
                     res.end();
                 } catch(e){ 
+                	 require('./controllers/404').get(req, res);
                     send404(res); 
                 }               
                 break;
             }
              if (/\.(css)$/.test(path)){
+             	 try {
 			    res.writeHead(200, {'Content-Type': 'text/css'});
 			    res.write(fs.readFileSync(__dirname + path, 'utf8')); // <--- add this line
 			    res.end();
+			    } catch(e){ 
+                	 require('./controllers/404').get(req, res);
+                    send404(res); 
+                } 
 			    break;
             }
               if (/\.(png|jpg)$/.test(path)){
-             	
-			    res.writeHead(200, {'Content-Type': 'image/'+ (path.substr(-3) === '.png' ? 'png' : 'jpg')});
+             	try {
+			    res .writeHead(200, {'Content-Type': 'image/'+ (path.substr(-3) === '.png' ? 'png' : 'jpg')});
 			    var img = fs.readFileSync(__dirname + path);
 			    res.end(img, 'binary');
+			    } catch(e){ 
+                	 require('./controllers/404').get(req, res);
+                    send404(res); 
+                }   
 			    break;
             }
 
-             require('./controllers/404').get(req, res);
+            
             break;
     }
  

@@ -276,7 +276,7 @@ var thelist = function() {
         "UID": "event_OE02417", 
         "URL": "http://schedule.sxsw.com/2013/events/event_OE02417", 
         "SUMMARY": "Chevy Tweethouse", 
-        "LOCATION": "Mellow Johnny\u2019s Bike Shop \n400 Nueces St", 
+        "LOCATION": "Mellow Johnnys Bike Shop \n400 Nueces St", 
         "DTEND": "20130310T000000", 
         "DTSTART": "20130309T140000"
       }, 
@@ -1514,6 +1514,376 @@ var thelist = function() {
         "DTEND": "20130312T020000", 
         "DTSTART": "20130311T180000"
       },
+       //  The Fox Tavern
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
+        "SUMMARY": "The Fox Tavern", 
+        "LOCATION": "601 W. 6th Street", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
+        "SUMMARY": "The Fox Tavern", 
+        "LOCATION": "601 W. 6th Street", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
+        "SUMMARY": "The Fox Tavern", 
+        "LOCATION": "601 W. 6th Street", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
+        "SUMMARY": "The Fox Tavern", 
+        "LOCATION": "601 W. 6th Street", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
+        "SUMMARY": "The Fox Tavern", 
+        "LOCATION": "601 W. 6th Street", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      
+         //  The Chicago House
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
+        "SUMMARY": "The Chicago House", 
+        "LOCATION": "607 Trinity St.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
+        "SUMMARY": "The Chicago House", 
+        "LOCATION": "607 Trinity St.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
+        "SUMMARY": "The Chicago House", 
+        "LOCATION": "607 Trinity St.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
+        "SUMMARY": "The Chicago House", 
+        "LOCATION": "607 Trinity St.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
+        "SUMMARY": "The Chicago House", 
+        "LOCATION": "607 Trinity St.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      // HandleBar
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
+        "SUMMARY": "HandleBar", 
+        "LOCATION": "121 E 5th St Brazos", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
+        "SUMMARY": "HandleBar", 
+        "LOCATION": "121 E 5th St Brazos", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
+        "SUMMARY": "HandleBar", 
+        "LOCATION": "121 E 5th St Brazos", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
+        "SUMMARY": "HandleBar", 
+        "LOCATION": "121 E 5th St Brazos", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
+        "SUMMARY": "HandleBar", 
+        "LOCATION": "121 E 5th St Brazos", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      //Shangri-La
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
+        "SUMMARY": "Shangri-La", 
+        "LOCATION": "1016 E 6th St at Medina St", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
+        "SUMMARY": "Shangri-La", 
+        "LOCATION": "1016 E 6th St at Medina St", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
+        "SUMMARY": "Shangri-La", 
+        "LOCATION": "1016 E 6th St at Medina St", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
+        "SUMMARY": "Shangri-La", 
+        "LOCATION": "1016 E 6th St at Medina St", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
+        "SUMMARY": "Shangri-La", 
+        "LOCATION": "1016 E 6th St at Medina St", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      //The Driskill Hotel Bar
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
+        "SUMMARY": "The Driskill Hotel Bar", 
+        "LOCATION": "604 Brazos St 6th St", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
+        "SUMMARY": "The Driskill Hotel Bar", 
+        "LOCATION": "604 Brazos St 6th St", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
+        "SUMMARY": "The Driskill Hotel Bar", 
+        "LOCATION": "604 Brazos St 6th St", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
+        "SUMMARY": "The Driskill Hotel Bar", 
+        "LOCATION": "604 Brazos St 6th St", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
+        "SUMMARY": "The Driskill Hotel Bar", 
+        "LOCATION": "604 Brazos St 6th St", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      //The White Horse
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
+        "SUMMARY": "The White Horse", 
+        "LOCATION": "500 Comal St", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
+        "SUMMARY": "The White Horse", 
+        "LOCATION": "500 Comal St", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
+        "SUMMARY": "The White Horse", 
+        "LOCATION": "500 Comal St", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
+        "SUMMARY": "The White Horse", 
+        "LOCATION": "500 Comal St", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
+        "SUMMARY": "The White Horse", 
+        "LOCATION": "500 Comal St", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      //Continental Club
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
+        "SUMMARY": "Continental Club", 
+        "LOCATION": "1315 S. Congress Ave.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
+        "SUMMARY": "Continental Club", 
+        "LOCATION": "1315 S. Congress Ave.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
+        "SUMMARY": "Continental Club", 
+        "LOCATION": "1315 S. Congress Ave.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
+        "SUMMARY": "Continental Club", 
+        "LOCATION": "1315 S. Congress Ave.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
+        "SUMMARY": "Continental Club", 
+        "LOCATION": "1315 S. Congress Ave.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      //The Liberty
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
+        "SUMMARY": "The Liberty", 
+        "LOCATION": "1618 1/2 E 6th St.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
+        "SUMMARY": "The Liberty", 
+        "LOCATION": "1618 1/2 E 6th St.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
+        "SUMMARY": "The Liberty", 
+        "LOCATION": "1618 1/2 E 6th St.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
+        "SUMMARY": "The Liberty", 
+        "LOCATION": "1618 1/2 E 6th St.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
+        "SUMMARY": "The Liberty", 
+        "LOCATION": "1618 1/2 E 6th St.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      },
+      // Broken Spoke
+       {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
+        "SUMMARY": "Broken Spoke", 
+        "LOCATION": "3201 S. Lamar Blvd.", 
+        "DTEND": "20130308T020000", 
+        "DTSTART": "20130307T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
+        "SUMMARY": "Broken Spoke", 
+        "LOCATION": "3201 S. Lamar Blvd.", 
+        "DTEND": "20130309T020000", 
+        "DTSTART": "20130308T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
+        "SUMMARY": "Broken Spoke", 
+        "LOCATION": "3201 S. Lamar Blvd.", 
+        "DTEND": "20130310T020000", 
+        "DTSTART": "20130309T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
+        "SUMMARY": "Broken Spoke", 
+        "LOCATION": "3201 S. Lamar Blvd.", 
+        "DTEND": "20130311T020000", 
+        "DTSTART": "20130310T180000"
+      },
+      {
+        "UID": "event_Bar", 
+        "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
+        "SUMMARY": "Broken Spoke", 
+        "LOCATION": "3201 S. Lamar Blvd.", 
+        "DTEND": "20130312T020000", 
+        "DTSTART": "20130311T180000"
+      }
     ], 
     "X-WR-TIMEZONE": "US/Central", 
     "VERSION": "2.0", 

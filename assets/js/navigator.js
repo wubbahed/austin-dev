@@ -35,10 +35,10 @@
 	{'location':'Omni Downtown Longhorn 700 San Jacinto','lat':'30.268876','long':'-97.740389'},
 	{'location':'Omni Downtown Lone Star 700 San Jacinto','lat':'30.268876','long':'-97.740389'},
 	{'location':'Driskill Hotel Maximilian 604 Brazos St','lat':'30.26801','long':'-97.741829'},
-	{'location':'AT&amp;T Conference Center Classroom 105 1900 University Ave','lat':'30.281994','long':'-97.74019'},
-	{'location':'AT&amp;T Conference Center Classroom 104\n1900 University Ave','lat':'30.281994','long':'-97.74019'},
-	{'location':'AT&amp;T Conference Center Classroom 204 1900 University Ave','lat':'30.281994','long':'-97.74019'},
-	{'location':'AT&amp;T Conference Center Classroom 202 1900 University Ave','lat':'30.281994','long':'-97.74019'},
+	{'location':'AT&T Conference Center Classroom 105 1900 University Ave','lat':'30.281994','long':'-97.74019'},
+	{'location':'AT&T Conference Center Classroom 104 1900 University Ave','lat':'30.281994','long':'-97.74019'},
+	{'location':'AT&T Conference Center Classroom 204 1900 University Ave','lat':'30.281994','long':'-97.74019'},
+	{'location':'AT&T Conference Center Classroom 202 1900 University Ave','lat':'30.281994','long':'-97.74019'},
 	
 	{'location':'Sheraton Austin Creekside 701 E 11th St','lat':'30.27031', 'long':'-97.734225'},
 	{'location':'Sheraton Austin Capitol View South 701 E 11th St','lat':'30.27033', 'long':'-97.734332'},
@@ -57,7 +57,7 @@
 	{'location':'Fogo de Chao 309 E 3rd St','lat':'30.26424', 'long':'-97.74069'},
 	{'location':'Empire 606 E 7th St','lat':'30.267457', 'long':'-97.736027'},
 	{'location':'The North Door 501 N I-35','lat':'30.264948', 'long':'-97.734193'},
-	{'location':'Mellow Johnny\u2019s Bike Shop 400 Nueces St','lat':'30.268146', 'long':'-97.749242'},
+	{'location':'Mellow Johnnys Bike Shop 400 Nueces St','lat':'30.268146', 'long':'-97.749242'},
 	{'location':'Courtyard Marriott Rio Grande Ballroom 300 E 4th St','lat':'30.265731', 'long':'-97.740560'},
 	{'location':'Courtyard Marriott Brazos 300 E 4th St','lat':'30.265731', 'long':'-97.740560'},
 	//bars
@@ -71,6 +71,15 @@
 	{'location':'1308 E 6th St','lat':'30.263953', 'long':'-97.728736'},
 	{'location':'97 Rainey St. Driskill St.','lat':'30.260758', 'long':'-97.737883'},
 	{'location':'2034 S. Lamar Blvd.','lat':'30.248942', 'long':'-97.768928'},
+	{'location':'601 W. 6th Street','lat':'30.269572', 'long':'-97.748668'},
+	{'location':'607 Trinity St.','lat':'30.267669', 'long':'-97.738995'},
+	{'location':'121 E 5th St Brazos','lat':'30.266723', 'long':'-97.742046'},
+	{'location':'1016 E 6th St at Medina St','lat':'30.26502', 'long':'-97.731607'},
+	{'location':'604 Brazos St 6th St','lat':'30.268016', 'long':'-97.741764'},
+	{'location':'500 Comal St','lat':'30.262585', 'long':'-97.726987'},
+	{'location':'1315 S. Congress Ave.','lat':'30.250521', 'long':'-97.749096'},
+	{'location':'1618 1/2 E 6th St.','lat':'30.262659', 'long':'-97.725052'},
+	{'location':'3201 S. Lamar Blvd.','lat':'30.241082', 'long':'-97.785334'},
 	]}
 	
 
@@ -113,13 +122,15 @@
 
 			// strip off the address, carrige return in the json was breaking it
 			var _shortName = $(_sessions[i]).text();
+			_li.push($(_sessions[i]).parent());
 			//.slice(0,_sessions[i].innerHTML.indexOf("\n"));
+			console.log(_shortName);
 			//calculate the distance between current location and venue and add it to the parent li
 			for ( j = 0; j < locations.locations.length; j++) {
-
+					console.log(locations.locations[j].location.indexOf(_shortName));
 				if (locations.locations[j].location.indexOf(_shortName) > -1) {
 					var _distance = distance(_lat, _long, Number(locations.locations[j].lat), Number(locations.locations[j].long), 'K');
-					_li.push($(_sessions[i]).parent());
+					//_li.push($(_sessions[i]).parent());
 					$(_sessions[i]).parent().attr('distance', _distance);
 
 					$(_locationArr[i]).attr('href', ' http://maps.google.com/maps?q=' + locations.locations[j].lat + ',' + locations.locations[j].long);
@@ -137,8 +148,12 @@
 			else
 				return -1;
 		});
-
+		// remove close btns if not enough results
+		var _extras = $("#sessions .extra");
+		_li.push(_extras);
+		
 		$('#sessions').empty().html(_li);
+		
 
 		fadeIn();
 
@@ -167,8 +182,11 @@
 				top : 0,
 				left : 0
 			}, (450), 'easeOutCubic', function() {
-				$(this).find('.close').removeClass('hidden');
-				$(this).find('.close').fadeIn()
+				console.log(_sessions.length);
+				if(_sessions.length>=3){
+					$(this).find('.close').removeClass('hidden');
+					$(this).find('.close').fadeIn();
+				} 
 			});
 		}
 
@@ -176,21 +194,24 @@
 		$(_sessions[1]).addClass('second');
 		$(_sessions[2]).addClass('third');
 		//add support for swiping
-
+		console.log("sessions length on start: "+_sessions.length);
+		
 		$('.close').click(function(e) {
 			e.preventDefault();
 
-			$(this).slideUp(500);
+			//$(this).slideUp(500);
 			var _newStart = 0;
 			var _sessions = $('#sessions li').not('.hidden');
 
 			for ( i = 0; i < _sessions.length; i++) {
 
 				if ($(this).parent().hasClass("first") && ( $(_sessions[i]).hasClass("first"))) {
-					$(this).parent().removeClass('first');
+					//$(this).parent().removeClass('first');
+				//	$(_sessions[i]).addClass('hiding');
 					$(_sessions[i]).slideUp(500, function() {
 						// Animation complete.
 						$(_sessions[i]).addClass('hidden');
+						$(_sessions[i]).parent().removeClass('first');
 					});
 					$(_sessions[i + 1]).removeClass('second');
 					$(_sessions[i + 1]).addClass('first');
@@ -199,25 +220,33 @@
 					$(_sessions[i + 3]).addClass('third');
 					break;
 				} else if ($(this).parent().hasClass("second") && ($(_sessions[i]).hasClass("second"))) {
-					$(this).parent().removeClass('second');
+					
+					//$(_sessions[i]).addClass('hiding');
 					$(_sessions[i]).slideUp(500, function() {
 						// Animation complete.
 						$(_sessions[i]).addClass('hidden');
+						$(_sessions[i]).parent().removeClass('second');
 					});
 					$(_sessions[i + 1]).removeClass('third')
 					$(_sessions[i + 1]).addClass('second');
 					$(_sessions[i + 2]).addClass('third');
 					break;
 				} else if ($(this).parent().hasClass("third") && ( $(_sessions[i]).hasClass("third"))) {
-					$(this).parent().removeClass('third');
-					$(_sessions[i]).slideUp(500, function() {
+					//$(this).parent().removeClass('third');
+				//	$(_sessions[i]).addClass('hiding');
+					$(_sessions[i]).slideUp( 500, function() {
 						// Animation complete.
 						$(_sessions[i]).addClass('hidden');
+						$(_sessions[i]).parent().removeClass('third');
 					});
 					$(_sessions[i + 1]).addClass('third');
 					break;
 				}
-
+			}
+			console.log(_sessions.length);
+			if(_sessions.length<5){
+				//do nothing for now
+			//	$(_sessions).find(".close").addClass("hidden");
 			}
 
 		});

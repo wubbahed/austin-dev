@@ -12,8 +12,14 @@ exports.get = function(req, res) {
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
 	var tzOffset = date.getTimezoneOffset;
-	console.log(date.getTimezoneOffset());
-	date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-6, date.getMinutes());
+	console.log(date.getDate());
+	if(date.getTimezoneOffset() === 0){
+		if(date.getDate()<11){
+			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-6, date.getMinutes());
+		} else{
+			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-5, date.getMinutes());
+		}
+	}
 	console.log(date.getTimezoneOffset());
 	//a = new time.Date(1337324400000);
 	//	console.log(query.dotw);
@@ -28,7 +34,7 @@ exports.get = function(req, res) {
 		}
 		case 'Fri': {
 			console.log("Friday");
-			date = new Date(2013, 02, 08, 14, 25);
+			date = new Date(2013, 02, 08,  date.getHours(), date.getMinutes());
 			break;
 		}
 		case 'Sat': {
@@ -48,7 +54,7 @@ exports.get = function(req, res) {
 		}
 		case 'Tue': {
 			console.log("Tuesday");
-			date = new Date(2013, 02, 12, 15, 30);
+			date = new Date(2013, 02, 12, date.getHours(), date.getMinutes());
 			break;
 		}
 		case '': {
@@ -163,7 +169,12 @@ exports.get = function(req, res) {
 			//shows output as HH:MM
 			//  duration.value= hourtext + ':' + mintext;
 			//_timeText = new Date();
-			var _strLocation = teamlist.VCALENDAR.VEVENT[i].LOCATION.slice(0, teamlist.VCALENDAR.VEVENT[i].LOCATION.indexOf("\n"));
+			var _strLocation= teamlist.VCALENDAR.VEVENT[i].LOCATION;
+			
+			if(teamlist.VCALENDAR.VEVENT[i].LOCATION.indexOf("\n") >-1){
+				_strLocation = teamlist.VCALENDAR.VEVENT[i].LOCATION.slice(0, teamlist.VCALENDAR.VEVENT[i].LOCATION.indexOf("\n"));
+			}
+			
 			var _gLocation = _strLocation.replace(/ /gi, "+");
 			//console.log(_gLocation);
 			strTeam = strTeam + "<li class='hidden'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
@@ -190,6 +201,28 @@ exports.get = function(req, res) {
 		res.end();
 
 	} else {
+		strTeam = strTeam + "<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
+			"<div class='summary'>Or you could just get an early start on your hangover. </div>" +
+			"</li>"+
+			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
+			"<div class='summary'>Somewhere Lone Star and Tecate are doing a panel together.  </div>" +
+			"</li>"+
+			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
+			"<div class='summary'>Some fliers outside the convention center need proofreading.</div>" +
+			"</li>"+
+			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
+			"<div class='summary'>ASHLEIGH BANFIELD IS FLIPPING BURGERS AT THE CNN GRILL!!!</div>" +
+			"</li>"+
+			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
+			"<div class='summary'>Is that brisket in your teeth? You might want to take care of that. </div>" +
+			"</li>"+
+			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
+			"<div class='summary'>You know music doesn't start till next week, right?</div>" +
+			"</li>"+
+			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
+			"<div class='summary'>Are you this picky at the Four Season breakfast Buffett?</div>" +
+			"</li>";
+			
 		strTeam = "<ul id='sessions'>" + strTeam + "</ul>"
 		var _night = '';
 		var _logoPath = "planb_logo.png";
