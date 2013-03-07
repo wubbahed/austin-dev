@@ -211,13 +211,17 @@ exports.get = function(req, res) {
 	console.log("now: "+date);
 	console.log("_startingDate: "+_startingDate);
 	console.log(date.getHours() <= _startingDate.getHours());
-	if ( date.getDate() <= _startingDate.getDate() && date.getHours() < _startingDate.getHours() ) {
+	
+	//if ( date.getDate() <= _startingDate.getDate() && date.getHours() < _startingDate.getHours() ) {
+
+if ( _numsessions <1 ) {
 
 		//strTeam = noSession.build("<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>");
 		res.write(noSession.build("R/GA - Plan B", "<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>", "<div id='title'></div>"));
 		res.end();
 
 	} else {
+		
 			var _funnyStuff = [ "<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Or you could just get an early start on your hangover. </div>" +
 			"</li>",
