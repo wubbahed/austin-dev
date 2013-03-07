@@ -29,6 +29,9 @@ body {
 }
 #logo_slash{
 	opacity:1.0;
+	top: -47px;
+	left: 47px;
+	width: 23px;
 }
 .navbar .brand {
 	padding-right: 0px;

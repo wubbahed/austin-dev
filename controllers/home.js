@@ -12,10 +12,12 @@ exports.get = function(req, res) {
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
 	var tzOffset = date.getTimezoneOffset;
-	//console.log(date.getDate());
+	console.log(date);
+	
 	if(date.getTimezoneOffset() === 0){
 		if(date.getDate()<11){
 			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-6, date.getMinutes());
+		
 		} else{
 			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-5, date.getMinutes());
 		}
@@ -29,12 +31,12 @@ exports.get = function(req, res) {
 	switch(query.dotw) {
 		case 'Thu': {
 			//console.log("Thursday");
-			date = new Date(2013, 02, 07, date.getHours(), date.getMinutes());
+			date = new Date(2013, 02, 07, 18,00);
 			break;
 		}
 		case 'Fri': {
 			//console.log("Friday");
-			date = new Date(2013, 02, 08,  09, 17);
+			date = new Date(2013, 02, 08,  13, 17);
 			break;
 		}
 		case 'Sat': {
@@ -205,7 +207,11 @@ exports.get = function(req, res) {
 	
 	    return array;
 	}
-	if (_numsessions < 1) {
+	var _startingDate = new Date(2013, 02, 07, 18,00);
+	console.log("now: "+date);
+	console.log("_startingDate: "+_startingDate);
+	console.log(date.getHours() <= _startingDate.getHours());
+	if ( date.getDate() <= _startingDate.getDate() && date.getHours() < _startingDate.getHours() ) {
 
 		//strTeam = noSession.build("<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>");
 		res.write(noSession.build("R/GA - Plan B", "<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>", "<div id='title'></div>"));
@@ -233,9 +239,8 @@ exports.get = function(req, res) {
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Are you this picky at the Four Season breakfast Buffett?</div>" +
 			"</li>"];
-			console.log(_funnyStuff);
+			
 			_funnyStuff = shuffle(_funnyStuff);
-				console.log(_funnyStuff);
 			for (f=0;f<4;f++){
 				strTeam = strTeam +	_funnyStuff[f];
 			}

@@ -422,6 +422,7 @@ button.close img{
 	padding-right: 10px;
 	float:right;
 	text-shadow:none;
+	line-height: .9em;
 }
 #Stage{
 	position:absolute;
