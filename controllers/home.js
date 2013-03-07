@@ -31,7 +31,7 @@ exports.get = function(req, res) {
 	switch(query.dotw) {
 		case 'Thu': {
 			//console.log("Thursday");
-			date = new Date(2013, 02, 07, 18,00);
+			date = new Date(2013, 02, 07, 18, 00);
 			break;
 		}
 		case 'Fri': {
@@ -61,7 +61,7 @@ exports.get = function(req, res) {
 		}
 		case '': {
 			//console.log("default");
-			date = new Date();
+			//date = new Date();
 			break;
 		}
 	}
@@ -207,7 +207,7 @@ exports.get = function(req, res) {
 	
 	    return array;
 	}
-	var _startingDate = new Date(2013, 02, 07, 18,00);
+	var _startingDate = new Date(2013, 02, 07, 18, 00);
 	console.log("now: "+date);
 	console.log("_startingDate: "+_startingDate);
 	console.log(date.getHours() <= _startingDate.getHours());
