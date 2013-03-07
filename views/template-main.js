@@ -7,7 +7,7 @@ exports.build = function(title, pagetitle, content, _extra, logo_path) {
 ' <meta http-equiv="expires" content="-1" />',
 ' <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">',
 ' <meta name="apple-mobile-web-app-capable" content="yes" />',
-'<meta property="og:title" content="R/GA SXSW - Plan B"/>',
+'<meta property="og:title" content="Plan B - R/GA"/>',
 '<meta property="og:url" content="http://planb.rga.com"/>',
 '<meta name="description" content="Turn up to your SXSW session and it&#39;s a sell out? \nOr maybe 5 minutes in, you realize it&#39;s not what you thought it was?\n Then you need R/GA Austin&#39;s Plan B!\n The web app will serve up a curated selection of sessions and panels based on your location so you can quickly find a back up. \nAt night, the app does the same, but for bars. \nR/GA&#39;s Plan B ensures you make the most of every digital and beer soaked hour of SXSW.">',
 '<meta property="og:image" content="http://planb.rga.com/assets/img/touch-icon-ipad-retina.png"/>',

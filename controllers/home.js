@@ -217,7 +217,7 @@ exports.get = function(req, res) {
 if ( _numsessions <1 ) {
 
 		//strTeam = noSession.build("<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>");
-		res.write(noSession.build("R/GA - Plan B", "<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>", "<div id='title'></div>"));
+		res.write(noSession.build("Plan B", "<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>", "<div id='title'></div>"));
 		res.end();
 
 	} else {
@@ -257,7 +257,7 @@ if ( _numsessions <1 ) {
 			_night = '<link rel="stylesheet" href="/assets/css/night.css" />';
 			_logoPath = "planb_logo_white.png";
 		}
-		res.write(template.build("PlanB - R/GA", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night, _logoPath));
+		res.write(template.build("Plan B", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night, _logoPath));
 		res.end();
 	}
 }

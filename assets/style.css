@@ -217,7 +217,7 @@ ul{
 
 
 #sessions li div{
-	padding:.5em 0em 0em 0;
+	padding:2em 0em 0em 0;
 	width:100%;
 	font-size: 0.8em;
 	color:#000000;
@@ -235,12 +235,13 @@ ul{
 #sessions li  .summary{
 	font-weight:bold;
 	width: auto;
-	font-size: .8em;
-	padding:2em 4em 0em 4em;
+	font-size: .9em;
+	line-height: 1.5em;
+padding: 1.5em 4em .5em 4em;
 }
 
 @media screen and (device-aspect-ratio: 2/3)  {
-		/* Styles */
+		/* Styles 
 		#sessions li div{
 			font-size: .8em;
 			padding:.5em 0em 0em 0em
@@ -255,10 +256,10 @@ ul{
 		#sessions li  .more{
 			font-size: 1.5em;
    			padding: 0em 0em 0em 0em;
-		}
+		}*/
 	}
 @media screen and (device-aspect-ratio: 3/2)  {
-		/* Styles */
+		/* Styles 
 		#logo_holder{
 			width:75px;
 		}
@@ -276,8 +277,12 @@ ul{
 		#sessions li  .more{
 			font-size: 1.5em;
    			padding: 0em 0em 0em 0em;
-		}
-	}	
+		}*/
+}	
+@media screen and (device-aspect-ratio: 9/16)  {
+	.overall-container{min-height:640px;}
+}
+
 #sessions .first{
 	background:#f1f1f1;
 }
@@ -347,8 +352,9 @@ button.close img{
 }
 #sessions .starts{
 	float: left;
-	padding: 0em 1em 1em 0em;
-	
+	padding: 0em 1em 0em 0em;
+	font-size: 0.8em;
+	line-height: 1em;
 }
 
 .overall-container{
@@ -422,6 +428,7 @@ button.close img{
 	font-family: 'Helvetica';
 	padding-right: 10px;
 	float:right;
+	opacity: .6;
 	text-shadow:none;
 	line-height: .9em;
 }
