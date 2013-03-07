@@ -111,26 +111,19 @@
 		var _lat = position.coords.latitude;
 		// 30.281994;//30.262725;//
 		var _long = position.coords.longitude;
-		console.log("accuracy: "+ position.coords.accuracy);
-		//-97.740418;//p-97.74019;
 		var _okVenues = [];
 		var _sessions = $('.location');
 		var _locationArr = $('.map-address');
 		var _totalSessions = 0;
 		var _li = [];
 		var _getTime = new Date();
-	//	alert(_getTime);
-		// first sort through the sessions
 		for ( i = 0; i < _sessions.length; i++) {
 
 			// strip off the address, carrige return in the json was breaking it
 			var _shortName = $(_sessions[i]).text();
 			_li.push($(_sessions[i]).parent());
-			//.slice(0,_sessions[i].innerHTML.indexOf("\n"));
-		//	console.log(_shortName);
-			//calculate the distance between current location and venue and add it to the parent li
 			for ( j = 0; j < locations.locations.length; j++) {
-				//	console.log(locations.locations[j].location.indexOf(_shortName));
+				//	console.log(locations.locations[j].location.indexOf(_shortName));Feas
 				if (locations.locations[j].location.indexOf(_shortName) > -1) {
 					var _distance = distance(_lat, _long, Number(locations.locations[j].lat), Number(locations.locations[j].long), 'K');
 					//_li.push($(_sessions[i]).parent());
@@ -185,7 +178,7 @@
 				top : 0,
 				left : 0
 			}, (450), 'easeOutCubic', function() {
-				console.log(_sessions.length);
+			//	console.log(_sessions.length);
 				if(_sessions.length>=3){
 					$(this).find('.close').removeClass('hidden');
 					$(this).find('.close').fadeIn();
@@ -246,11 +239,7 @@
 					break;
 				}
 			}
-		//	console.log(_sessions.length);
-			if(_sessions.length<5){
-				//do nothing for now
-			//	$(_sessions).find(".close").addClass("hidden");
-			}
+	
 
 		});
 
@@ -292,56 +281,5 @@
 		}); 
 
 	
-
-    	//$("#sessionsw").bind('swipedown',function(){console.log("swiping down")});
-     
-			/*		var slides = jQuery('#sessions li')
-					var width = slides[0].width*.5; 
-					slides
-					.on('swiperight', function(e) {
-							if($(this).position().left<'0'){
-								$(this).animate({left:0},500);
-							//	$(this).find('.close').animate({right:'52%'},500);
-							} 
-					})
-					.on('swipeleft', function(e) {
-						if($(this).position().left==0){
-								$(this).animate({left:'-100%'},500);
-							//	$(this).find('.close').animate({right:'8%'},500);
-							}
-					})
-					.on('click', function(e) {
-							if($(this).position().left<'0'){
-								$(this).animate({left:0},500);
-							//	$(this).find('.close').animate({right:'52%'},500);
-							} else{
-								$(this).animate({left:'-100%'},500);
-							///	$(this).find('.close').animate({right:'8%'},500);
-							}
-					})
-					
-					.on('movestart', function(e) {
-						// If the movestart heads off in a upwards or downwards
-						// direction, prevent it so that the browser scrolls normally.
-						if ((e.distX > e.distY && e.distX < -e.distY) ||
-						    (e.distX < e.distY && e.distX > -e.distY)) {
-							//e.preventDefault();
-							return;
-						}
-					})
-						// To allow the slide to keep step with the finger,
-					// temporarily disable transitions.
-					
-					.on('touch', function(e) {
-							if($(this).position().left<'0'){
-								$(this).animate({left:0},500);
-							//	$(this).find('.close').animate({right:'52%'},500);
-							} else{
-								$(this).animate({left:'-100%'},500);
-								//$(this).find('.close').animate({right:'8%'},500);
-							}
-					})
-					
-					*/
 	});
 }(window.jQuery);
