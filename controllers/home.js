@@ -12,16 +12,16 @@ exports.get = function(req, res) {
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
 	var tzOffset = date.getTimezoneOffset;
-	console.log(date);
+	//console.log(date);
 	
-	if(date.getTimezoneOffset() === 0){
+	//if(date.getTimezoneOffset() === 000){
 		if(date.getDate()<11){
 			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-6, date.getMinutes());
 		
 		} else{
 			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-5, date.getMinutes());
 		}
-	}
+//	}
 	//console.log(date.getTimezoneOffset());
 	//a = new time.Date(1337324400000);
 	//	console.log(query.dotw);
@@ -214,13 +214,13 @@ exports.get = function(req, res) {
 	
 	//if ( date.getDate() <= _startingDate.getDate() && date.getHours() < _startingDate.getHours() ) {
 
-if ( _numsessions <1 ) {
+//if ( _numsessions <1 ) {
 
 		//strTeam = noSession.build("<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>");
-		res.write(noSession.build("Plan B", "<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>", "<div id='title'></div>"));
-		res.end();
+	//	res.write(noSession.build("Plan B", "<div>The ultimate SXSW backup plan.</div><div>Coming soon.</div>", "<div id='title'></div>"));
+	//	res.end();
 
-	} else {
+	//} else {
 		
 			var _funnyStuff = [ "<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Or you could just get an early start on your hangover. </div>" +
@@ -259,5 +259,5 @@ if ( _numsessions <1 ) {
 		}
 		res.write(template.build("Plan B", "<div id='title'></div><div id='right-title'>SXSW</div>", strTeam, _night, _logoPath));
 		res.end();
-	}
+	//}
 }

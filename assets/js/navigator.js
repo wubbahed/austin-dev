@@ -82,6 +82,22 @@
 	{'location':'1315 S. Congress Ave.','lat':'30.250521', 'long':'-97.749096'},
 	{'location':'1618 1/2 E 6th St.','lat':'30.262659', 'long':'-97.725052'},
 	{'location':'3201 S. Lamar Blvd.','lat':'30.241082', 'long':'-97.785334'},
+	{'location':'1316 S. Congress Ave.','lat':'30.250662', 'long':'-97.749631'}, 
+	{'location':'1412 S. Congress Ave.','lat':'30.249164', 'long':'-97.750105'}, 
+	{'location':'510 S. Congress Ave.','lat':'30.256245', 'long':'-97.747523'}, 
+	{'location':'1300 Colorado St.','lat':'30.275785', 'long':'-97.742115'}, 
+	{'location':'200 Congress Avenue','lat':'30.264551', 'long':'-97.74432'}, 
+	{'location':'61 Rainey St','lat':'30.257974', 'long':'-97.738912'}, 
+	{'location':'1600 W. 5th St.','lat':'30.274083', 'long':'-97.763367'},
+	{'location':'1417 S 1st St','lat':'30.250174', 'long':'-97.754671'},
+	{'location':'1700 E 5th St.','lat':'30.261673', 'long':'-97.724829'},
+	{'location':'1308 E 6th St','lat':'30.263953', 'long':'-97.728772'},
+	{'location':'1100 E. 6th St.','lat':'30.26486', 'long':'-97.731299'},
+	{'location':'1700 E. 6th St.','lat':'30.262537', 'long':'-97.724242'},
+	{'location':'98 San Jacinto Blvd','lat':'30.261626', 'long':'-97.741469'},
+	{'location':'500 W. 29th St.','lat':'30.29554', 'long':'-97.741781'},
+	{'location':'1133 E 11th St','lat':'30.268642', 'long':'-97.728144'},
+	
 	]}
 	
 
