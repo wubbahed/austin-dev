@@ -67,8 +67,11 @@ body {
 	padding:.5em 0em;
 }
 #title{
-	background-position: 0 0px;
-	height:12px;
+	background: url('../img/logo_night.png');
+	background-size: contain;
+	background-position: 0 -11px;
+	background-size:contain;
+	background-repeat: no-repeat;
 }
 #Stage_a, #Stage_p, #Stage_l, #Stage_n, #Stage_b{
 	color:#fff!important;

@@ -232,7 +232,7 @@ if ( _numsessions <1 ) {
 			"<div class='summary'>Some fliers outside the convention center need proofreading.</div>" +
 			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
-			"<div class='summary'>ASHLEIGH BANFIELD IS FLIPPING BURGERS AT THE CNN GRILL!!!</div>" +
+			"<div class='summary'>Ashleigh Banfield in flipping burgers at the CNN Grill!!!</div>" +
 			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
 			"<div class='summary'>Is that brisket in your teeth? You might want to take care of that. </div>" +

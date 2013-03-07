@@ -400,11 +400,12 @@ button.close img{
 	color:	#000;
 	font-weight: bold;
 	text-shadow:none;
-	width: 88px;
+	width: 44px;
 	background: url('../assets/img/logo.png');
 	height: 27px;
 	float: left;
-	background-position: 0 -12px;
+	background-position: 0 -11px;
+	background-size:contain;
 	background-repeat: no-repeat;
 }
 #red-box{
