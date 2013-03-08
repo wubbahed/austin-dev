@@ -12,17 +12,19 @@ exports.get = function(req, res) {
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
 	var tzOffset = date.getTimezoneOffset();
-	console.log(date.getTimezoneOffset());
-	var _tempDate = new Date(2013, 02, date.getDate(), date.getHours()-6, date.getMinutes());
-	if(date.getTimezoneOffset() === 0000){
-		if(date.getDate()<11 && date.getHours()>9){
+	console.log("before: "+date);
+	//var _tempDate = new Date(2013, 02, date.getDate(), date.getHours()-6, date.getMinutes());
+	
+	if(date.getTimezoneOffset() === 0){
+		
+		if(date.getDate()<11  ){
 			date = new Date(2013, 02, date.getDate(), date.getHours()-6, date.getMinutes());
 		
-		} else if(date.getHours()>9){
-			date = new Date(2013, date.getMonth(), date.getDate(), date.getHours()-5, date.getMinutes());
+		} else{
+			date = new Date(2013, 02, date.getDate(), date.getHours()-5, date.getMinutes());
 		}
 	}
-	console.log(date);
+	console.log("after: "+date);
 	//a = new time.Date(1337324400000);
 	//	console.log(query.dotw);
 	if (query.dotw === undefined) {
@@ -36,7 +38,7 @@ exports.get = function(req, res) {
 		}
 		case 'Fri': {
 			//console.log("Friday");
-			date = new Date(2013, 02, 08,  13, 35);
+			date = new Date(2013, 02, 08,  09, 35);
 			break;
 		}
 		case 'Sat': {
@@ -105,8 +107,8 @@ exports.get = function(req, res) {
 		
 		_newStartTime = new Date(year, month, day, hour-1, min); 
 	//	_newStartTime.setTimezone("US/Central");
-		console.log()
-		if ((date.getDate() == _startDate.getDate() || date.getDate() == _endDate.getDate() ) && date.getTime() >= _newStartTime.getTime() && (date.getTime() <= _endDate.getTime() || endhour == 09 )) {
+		
+		if ((date.getDate() == _startDate.getDate()  ) && date.getTime() >= _newStartTime.getTime() && (date.getTime() <= _endDate.getTime() || endhour == 09 )) {
 			// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
 			if (hour > 12) {
