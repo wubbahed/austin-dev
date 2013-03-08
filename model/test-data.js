@@ -1037,7 +1037,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
         "SUMMARY": "Bar Ilegal", 
         "LOCATION": "609 Davis St Rainey St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1045,7 +1045,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
         "SUMMARY": "Bar Ilegal", 
         "LOCATION": "609 Davis St Rainey St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1053,7 +1053,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
         "SUMMARY": "Bar Ilegal", 
         "LOCATION": "609 Davis St Rainey St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1061,7 +1061,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
         "SUMMARY": "Bar Ilegal", 
         "LOCATION": "609 Davis St Rainey St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1069,7 +1069,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
         "SUMMARY": "Bar Ilegal", 
         "LOCATION": "609 Davis St Rainey St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1077,7 +1077,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
         "SUMMARY": "Bar Ilegal", 
         "LOCATION": "609 Davis St Rainey St.", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },
 	  //weather Up
@@ -1086,7 +1086,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4e6304f28877954de876e8d3", 
         "SUMMARY": "Weather Up", 
         "LOCATION": "1808 E Cesar Chavez St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1094,7 +1094,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
         "SUMMARY": "Weather Up", 
         "LOCATION": "1808 E Cesar Chavez St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1102,7 +1102,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
         "SUMMARY": "Weather Up", 
         "LOCATION": "1808 E Cesar Chavez St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1110,7 +1110,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
         "SUMMARY": "Weather Up", 
         "LOCATION": "1808 E Cesar Chavez St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1118,7 +1118,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
         "SUMMARY": "Weather Up", 
         "LOCATION": "1808 E Cesar Chavez St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1126,7 +1126,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f5f7143e4b0912b841f3e19", 
         "SUMMARY": "Weather Up", 
         "LOCATION": "1808 E Cesar Chavez St", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },		
       // Easy Tiger
@@ -1135,7 +1135,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
         "SUMMARY": "Easy Tiger", 
         "LOCATION": "709 E 6th St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1143,7 +1143,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
         "SUMMARY": "Easy Tiger", 
         "LOCATION": "709 E 6th St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1151,7 +1151,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
         "SUMMARY": "Easy Tiger", 
         "LOCATION": "709 E 6th St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1159,7 +1159,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
         "SUMMARY": "Easy Tiger", 
         "LOCATION": "709 E 6th St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1167,7 +1167,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
         "SUMMARY": "Easy Tiger", 
         "LOCATION": "709 E 6th St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1175,7 +1175,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d6e81901c1041bd009d5d28", 
         "SUMMARY": "Easy Tiger", 
         "LOCATION": "709 E 6th St", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },
        // Clive Bar
@@ -1184,7 +1184,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
         "SUMMARY": "Clive Bar", 
         "LOCATION": "609 Davis St at Rainey St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1192,7 +1192,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
         "SUMMARY": "Clive Bar", 
         "LOCATION": "609 Davis St at Rainey St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1200,7 +1200,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
         "SUMMARY": "Clive Bar", 
         "LOCATION": "609 Davis St at Rainey St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1208,7 +1208,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
         "SUMMARY": "Clive Bar", 
         "LOCATION": "609 Davis St at Rainey St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1216,7 +1216,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
         "SUMMARY": "Clive Bar", 
         "LOCATION": "609 Davis St at Rainey St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1224,7 +1224,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ac4e402f964a520729f20e3", 
         "SUMMARY": "Clive Bar", 
         "LOCATION": "609 Davis St at Rainey St", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },			
       //Burnside's Tavern
@@ -1233,7 +1233,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
         "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1241,7 +1241,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
         "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1249,7 +1249,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
         "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1257,7 +1257,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
         "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1265,7 +1265,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
         "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1273,7 +1273,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/511d218a29a69162c8f427af", 
         "SUMMARY": "Burnside's Tavern", 
         "LOCATION": "413 E. 6th St. btw Trinity and Neches", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },
       //Malverde
@@ -1282,7 +1282,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
         "SUMMARY": "Malverde", 
         "LOCATION": "400 W. 2nd St. Guadalupe St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1290,7 +1290,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
         "SUMMARY": "Malverde", 
         "LOCATION": "400 W. 2nd St. Guadalupe St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1298,7 +1298,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
         "SUMMARY": "Malverde", 
         "LOCATION": "400 W. 2nd St. Guadalupe St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1306,7 +1306,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
         "SUMMARY": "Malverde", 
         "LOCATION": "400 W. 2nd St. Guadalupe St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1314,7 +1314,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
         "SUMMARY": "Malverde", 
         "LOCATION": "400 W. 2nd St. Guadalupe St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1322,7 +1322,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49bfd5e7f964a52029551fe3", 
         "SUMMARY": "Malverde", 
         "LOCATION": "400 W. 2nd St. Guadalupe St.", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },
       //Bangers
@@ -1331,7 +1331,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
         "SUMMARY": "Banger's Sausage House & Beer Garden", 
         "LOCATION": "81 Rainey", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1339,7 +1339,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
         "SUMMARY": "Banger's Sausage House & Beer Garden", 
         "LOCATION": "81 Rainey", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1347,7 +1347,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
         "SUMMARY": "Banger's Sausage House & Beer Garden", 
         "LOCATION": "81 Rainey", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1355,7 +1355,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
         "SUMMARY": "Banger's Sausage House & Beer Garden", 
         "LOCATION": "81 Rainey", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1363,7 +1363,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
         "SUMMARY": "Banger's Sausage House & Beer Garden", 
         "LOCATION": "81 Rainey", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1371,7 +1371,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4feb8f93e4b0a19839c43cd2", 
         "SUMMARY": "Banger's Sausage House & Beer Garden", 
         "LOCATION": "81 Rainey", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },
       //Rio Rita
@@ -1380,7 +1380,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1388,7 +1388,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1396,7 +1396,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1404,7 +1404,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1412,7 +1412,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1420,7 +1420,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },
       //Lustre Pearl Bar
@@ -1429,7 +1429,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
         "SUMMARY": "Lustre Pearl Bar", 
         "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1437,7 +1437,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
         "SUMMARY": "Lustre Pearl Bar", 
         "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1445,7 +1445,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
         "SUMMARY": "Lustre Pearl Bar", 
         "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1453,7 +1453,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
         "SUMMARY": "Lustre Pearl Bar", 
         "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1461,7 +1461,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
         "SUMMARY": "Lustre Pearl Bar", 
         "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, 
       {
@@ -1469,7 +1469,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49ee9350f964a5206e681fe3", 
         "SUMMARY": "Lustre Pearl Bar", 
         "LOCATION": "97 Rainey St. Driskill St.", 
-        "DTEND": "20130313T020000", 
+        "DTEND": "20130313T090000", 
         "DTSTART": "20130312T180000"
       },
       
@@ -1479,7 +1479,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
         "SUMMARY": "The Horseshoe Lounge", 
         "LOCATION": "2034 S. Lamar Blvd.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1487,7 +1487,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
         "SUMMARY": "The Horseshoe Lounge", 
         "LOCATION": "2034 S. Lamar Blvd.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1495,7 +1495,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
         "SUMMARY": "The Horseshoe Lounge", 
         "LOCATION": "2034 S. Lamar Blvd.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1503,7 +1503,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
         "SUMMARY": "The Horseshoe Lounge", 
         "LOCATION": "2034 S. Lamar Blvd.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1511,7 +1511,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a520aef31ee3", 
         "SUMMARY": "The Horseshoe Lounge", 
         "LOCATION": "2034 S. Lamar Blvd.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
        //  The Fox Tavern
@@ -1520,7 +1520,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
         "SUMMARY": "The Fox Tavern", 
         "LOCATION": "601 W. 6th Street", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1528,7 +1528,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
         "SUMMARY": "The Fox Tavern", 
         "LOCATION": "601 W. 6th Street", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1536,7 +1536,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
         "SUMMARY": "The Fox Tavern", 
         "LOCATION": "601 W. 6th Street", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1544,7 +1544,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
         "SUMMARY": "The Fox Tavern", 
         "LOCATION": "601 W. 6th Street", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1552,7 +1552,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f530026e4b02d0eb4133142", 
         "SUMMARY": "The Fox Tavern", 
         "LOCATION": "601 W. 6th Street", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       
@@ -1562,7 +1562,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
         "SUMMARY": "The Chicago House", 
         "LOCATION": "607 Trinity St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1570,7 +1570,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
         "SUMMARY": "The Chicago House", 
         "LOCATION": "607 Trinity St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1578,7 +1578,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
         "SUMMARY": "The Chicago House", 
         "LOCATION": "607 Trinity St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1586,7 +1586,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
         "SUMMARY": "The Chicago House", 
         "LOCATION": "607 Trinity St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1594,7 +1594,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5101c5a8067dec76eb896585", 
         "SUMMARY": "The Chicago House", 
         "LOCATION": "607 Trinity St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       // HandleBar
@@ -1603,7 +1603,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
         "SUMMARY": "HandleBar", 
         "LOCATION": "121 E 5th St Brazos", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1611,7 +1611,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
         "SUMMARY": "HandleBar", 
         "LOCATION": "121 E 5th St Brazos", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1619,7 +1619,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
         "SUMMARY": "HandleBar", 
         "LOCATION": "121 E 5th St Brazos", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1627,7 +1627,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
         "SUMMARY": "HandleBar", 
         "LOCATION": "121 E 5th St Brazos", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1635,7 +1635,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4f45c9c5e4b00441a2db379c", 
         "SUMMARY": "HandleBar", 
         "LOCATION": "121 E 5th St Brazos", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //Shangri-La
@@ -1644,7 +1644,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
         "SUMMARY": "Shangri-La", 
         "LOCATION": "1016 E 6th St at Medina St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1652,7 +1652,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
         "SUMMARY": "Shangri-La", 
         "LOCATION": "1016 E 6th St at Medina St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1660,7 +1660,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
         "SUMMARY": "Shangri-La", 
         "LOCATION": "1016 E 6th St at Medina St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1668,7 +1668,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
         "SUMMARY": "Shangri-La", 
         "LOCATION": "1016 E 6th St at Medina St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1676,7 +1676,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/49e03d51f964a52048611fe3", 
         "SUMMARY": "Shangri-La", 
         "LOCATION": "1016 E 6th St at Medina St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //The Driskill Hotel Bar
@@ -1685,7 +1685,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
         "SUMMARY": "The Driskill Hotel Bar", 
         "LOCATION": "604 Brazos St 6th St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1693,7 +1693,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
         "SUMMARY": "The Driskill Hotel Bar", 
         "LOCATION": "604 Brazos St 6th St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1701,7 +1701,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
         "SUMMARY": "The Driskill Hotel Bar", 
         "LOCATION": "604 Brazos St 6th St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1709,7 +1709,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
         "SUMMARY": "The Driskill Hotel Bar", 
         "LOCATION": "604 Brazos St 6th St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1717,7 +1717,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ba2fdc6f964a520b02638e3", 
         "SUMMARY": "The Driskill Hotel Bar", 
         "LOCATION": "604 Brazos St 6th St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //The White Horse
@@ -1726,7 +1726,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
         "SUMMARY": "The White Horse", 
         "LOCATION": "500 Comal St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1734,7 +1734,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
         "SUMMARY": "The White Horse", 
         "LOCATION": "500 Comal St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1742,7 +1742,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
         "SUMMARY": "The White Horse", 
         "LOCATION": "500 Comal St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1750,7 +1750,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
         "SUMMARY": "The White Horse", 
         "LOCATION": "500 Comal St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1758,7 +1758,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4ed54d9329c2bbe661cf0501", 
         "SUMMARY": "The White Horse", 
         "LOCATION": "500 Comal St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //Continental Club
@@ -1767,7 +1767,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
         "SUMMARY": "Continental Club", 
         "LOCATION": "1315 S. Congress Ave.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1775,7 +1775,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
         "SUMMARY": "Continental Club", 
         "LOCATION": "1315 S. Congress Ave.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1783,7 +1783,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
         "SUMMARY": "Continental Club", 
         "LOCATION": "1315 S. Congress Ave.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1791,7 +1791,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
         "SUMMARY": "Continental Club", 
         "LOCATION": "1315 S. Congress Ave.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1799,7 +1799,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b52f80f964a52051001fe3", 
         "SUMMARY": "Continental Club", 
         "LOCATION": "1315 S. Congress Ave.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //The Liberty
@@ -1808,7 +1808,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
         "SUMMARY": "The Liberty", 
         "LOCATION": "1618 1/2 E 6th St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1816,7 +1816,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
         "SUMMARY": "The Liberty", 
         "LOCATION": "1618 1/2 E 6th St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1824,7 +1824,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
         "SUMMARY": "The Liberty", 
         "LOCATION": "1618 1/2 E 6th St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1832,7 +1832,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
         "SUMMARY": "The Liberty", 
         "LOCATION": "1618 1/2 E 6th St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1840,7 +1840,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a50231cf964a520ffaf1fe3", 
         "SUMMARY": "The Liberty", 
         "LOCATION": "1618 1/2 E 6th St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       // Broken Spoke
@@ -1849,7 +1849,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
         "SUMMARY": "Broken Spoke", 
         "LOCATION": "3201 S. Lamar Blvd.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1857,7 +1857,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
         "SUMMARY": "Broken Spoke", 
         "LOCATION": "3201 S. Lamar Blvd.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1865,7 +1865,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
         "SUMMARY": "Broken Spoke", 
         "LOCATION": "3201 S. Lamar Blvd.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1873,7 +1873,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
         "SUMMARY": "Broken Spoke", 
         "LOCATION": "3201 S. Lamar Blvd.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1881,7 +1881,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52071f31ee3", 
         "SUMMARY": "Broken Spoke", 
         "LOCATION": "3201 S. Lamar Blvd.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
        // Hotel San Jose
@@ -1890,7 +1890,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/449d7dd6f964a520b8341fe3", 
         "SUMMARY": "Hotel San Jose", 
         "LOCATION": "1316 S. Congress Ave.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1898,7 +1898,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/449d7dd6f964a520b8341fe3", 
         "SUMMARY": "Hotel San Jose", 
         "LOCATION": "1316 S. Congress Ave.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1906,7 +1906,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/449d7dd6f964a520b8341fe3", 
         "SUMMARY": "Hotel San Jose", 
         "LOCATION": "1316 S. Congress Ave.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1914,7 +1914,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/449d7dd6f964a520b8341fe3", 
         "SUMMARY": "Hotel San Jose", 
         "LOCATION": "1316 S. Congress Ave.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1922,7 +1922,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/449d7dd6f964a520b8341fe3", 
         "SUMMARY": "Hotel San Jose", 
         "LOCATION": "1316 S. Congress Ave.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
        // Guero's
@@ -1931,7 +1931,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/45f2a42df964a520e3431fe3", 
         "SUMMARY": "Guero's", 
         "LOCATION": "1412 S. Congress Ave.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1939,7 +1939,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/45f2a42df964a520e3431fe3", 
         "SUMMARY": "Guero's", 
         "LOCATION": "1412 S. Congress Ave.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1947,7 +1947,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/45f2a42df964a520e3431fe3", 
         "SUMMARY": "Guero's", 
         "LOCATION": "1412 S. Congress Ave.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1955,7 +1955,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/45f2a42df964a520e3431fe3", 
         "SUMMARY": "Guero's", 
         "LOCATION": "1412 S. Congress Ave.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -1963,7 +1963,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/45f2a42df964a520e3431fe3", 
         "SUMMARY": "Guero's", 
         "LOCATION": "1412 S. Congress Ave.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //Ego's Lounge
@@ -1972,7 +1972,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40ec8e80f964a5202c0a1fe3", 
         "SUMMARY": "Ego's Lounge", 
         "LOCATION": "510 S. Congress Ave.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -1980,7 +1980,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40ec8e80f964a5202c0a1fe3", 
         "SUMMARY": "Ego's Lounge", 
         "LOCATION": "510 S. Congress Ave.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -1988,7 +1988,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40ec8e80f964a5202c0a1fe3", 
         "SUMMARY": "Ego's Lounge", 
         "LOCATION": "510 S. Congress Ave.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -1996,7 +1996,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40ec8e80f964a5202c0a1fe3", 
         "SUMMARY": "Ego's Lounge", 
         "LOCATION": "510 S. Congress Ave.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2004,7 +2004,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40ec8e80f964a5202c0a1fe3", 
         "SUMMARY": "Ego's Lounge", 
         "LOCATION": "510 S. Congress Ave.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }, //Cloak Room
       {
@@ -2012,7 +2012,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52081f31ee3", 
         "SUMMARY": "Cloak Room", 
         "LOCATION": "1300 Colorado St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2020,7 +2020,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52081f31ee3", 
         "SUMMARY": "Cloak Room", 
         "LOCATION": "1300 Colorado St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2028,7 +2028,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52081f31ee3", 
         "SUMMARY": "Cloak Room", 
         "LOCATION": "1300 Colorado St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2036,7 +2036,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52081f31ee3", 
         "SUMMARY": "Cloak Room", 
         "LOCATION": "1300 Colorado St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2044,7 +2044,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52081f31ee3", 
         "SUMMARY": "Cloak Room", 
         "LOCATION": "1300 Colorado St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //Bar Congress
@@ -2053,7 +2053,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
         "LOCATION": "200 Congress Avenue", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2061,7 +2061,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
         "LOCATION": "200 Congress Avenue ", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2069,7 +2069,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
         "LOCATION": "200 Congress Avenue ", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2077,7 +2077,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
         "LOCATION": "200 Congress Avenue ", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2085,7 +2085,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
         "LOCATION": "200 Congress Avenue ", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //Craft Pride
@@ -2094,7 +2094,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5125600de4b0b833e8efa5fa", 
         "SUMMARY": "Craft Pride", 
         "LOCATION": "61 Rainey St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2102,7 +2102,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5125600de4b0b833e8efa5fa", 
         "SUMMARY": "Craft Pride", 
         "LOCATION": "61 Rainey St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2110,7 +2110,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5125600de4b0b833e8efa5fa", 
         "SUMMARY": "Craft Pride", 
         "LOCATION": "61 Rainey St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2118,7 +2118,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5125600de4b0b833e8efa5fa", 
         "SUMMARY": "Craft Pride", 
         "LOCATION": "61 Rainey St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2126,7 +2126,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5125600de4b0b833e8efa5fa", 
         "SUMMARY": "Craft Pride", 
         "LOCATION": "61 Rainey St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //Donn's Depot
@@ -2135,7 +2135,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52097f31ee3", 
         "SUMMARY": "Donn's Depot", 
         "LOCATION": "1600 W. 5th St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2143,7 +2143,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52097f31ee3", 
         "SUMMARY": "Donn's Depot", 
         "LOCATION": "1600 W. 5th St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2151,7 +2151,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52097f31ee3", 
         "SUMMARY": "Donn's Depot", 
         "LOCATION": "1600 W. 5th St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2159,7 +2159,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52097f31ee3", 
         "SUMMARY": "Donn's Depot", 
         "LOCATION": "1600 W. 5th St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2167,7 +2167,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b13b00f964a52097f31ee3", 
         "SUMMARY": "Donn's Depot", 
         "LOCATION": "1600 W. 5th St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
          //Sway Thai
@@ -2176,7 +2176,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5032659de4b0202f728f6166", 
         "SUMMARY": "Sway Thai", 
         "LOCATION": "1417 S 1st St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2184,7 +2184,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5032659de4b0202f728f6166", 
         "SUMMARY": "Sway Thai", 
         "LOCATION": "1417 S 1st St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2192,7 +2192,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5032659de4b0202f728f6166", 
         "SUMMARY": "Sway Thai", 
         "LOCATION": "1417 S 1st St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2200,7 +2200,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5032659de4b0202f728f6166", 
         "SUMMARY": "Sway Thai", 
         "LOCATION": "1417 S 1st St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2208,7 +2208,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/5032659de4b0202f728f6166", 
         "SUMMARY": "Sway Thai", 
         "LOCATION": "1417 S 1st St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
         //Yellow Jacket Social Club
@@ -2217,7 +2217,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d5f3bc3ef378cfa3d206da6", 
         "SUMMARY": "Yellow Jacket Social Club", 
         "LOCATION": "1700 E 5th St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2225,7 +2225,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d5f3bc3ef378cfa3d206da6", 
         "SUMMARY": "Yellow Jacket Social Club", 
         "LOCATION": "1700 E 5th St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2233,7 +2233,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d5f3bc3ef378cfa3d206da6", 
         "SUMMARY": "Yellow Jacket Social Club", 
         "LOCATION": "1700 E 5th St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2241,7 +2241,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d5f3bc3ef378cfa3d206da6", 
         "SUMMARY": "Yellow Jacket Social Club", 
         "LOCATION": "1700 E 5th St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2249,7 +2249,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d5f3bc3ef378cfa3d206da6", 
         "SUMMARY": "Yellow Jacket Social Club", 
         "LOCATION": "1700 E 5th St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
        //Rio Rita
@@ -2258,7 +2258,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2266,7 +2266,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2274,7 +2274,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2282,7 +2282,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2290,7 +2290,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/47d130fdf964a520114e1fe3", 
         "SUMMARY": "Rio Rita", 
         "LOCATION": "1308 E 6th St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
         //East Side Showroom
@@ -2299,7 +2299,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a5684e3f964a52051b51fe3", 
         "SUMMARY": "East Side Showroom", 
         "LOCATION": "1100 E. 6th St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2307,7 +2307,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a5684e3f964a52051b51fe3", 
         "SUMMARY": "East Side Showroom", 
         "LOCATION": "1100 E. 6th St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2315,7 +2315,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a5684e3f964a52051b51fe3", 
         "SUMMARY": "East Side Showroom", 
         "LOCATION": "1100 E. 6th St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2323,7 +2323,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a5684e3f964a52051b51fe3", 
         "SUMMARY": "East Side Showroom", 
         "LOCATION": "1100 E. 6th St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2331,7 +2331,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4a5684e3f964a52051b51fe3", 
         "SUMMARY": "East Side Showroom", 
         "LOCATION": "1100 E. 6th St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
        //The Grackle
@@ -2340,7 +2340,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d3678dfedbd3704d5d46ae3", 
         "SUMMARY": "The Grackle", 
         "LOCATION": "1700 E. 6th St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2348,7 +2348,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d3678dfedbd3704d5d46ae3", 
         "SUMMARY": "The Grackle", 
         "LOCATION": "1700 E. 6th St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2356,7 +2356,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d3678dfedbd3704d5d46ae3", 
         "SUMMARY": "The Grackle", 
         "LOCATION": "1700 E. 6th St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2364,7 +2364,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d3678dfedbd3704d5d46ae3", 
         "SUMMARY": "The Grackle", 
         "LOCATION": "1700 E. 6th St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2372,7 +2372,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4d3678dfedbd3704d5d46ae3", 
         "SUMMARY": "The Grackle", 
         "LOCATION": "1700 E. 6th St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
       //The Lobby Lounge at Four Seasons Hotel Austin
@@ -2381,7 +2381,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
         "LOCATION": "98 San Jacinto Blvd ", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2389,7 +2389,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
         "LOCATION": "98 San Jacinto Blvd ", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2397,7 +2397,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
         "LOCATION": "98 San Jacinto Blvd ", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2405,7 +2405,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
         "LOCATION": "98 San Jacinto Blvd ", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2413,7 +2413,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
         "LOCATION": "98 San Jacinto Blvd ", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
        //Spider House Patio Bar & Cafe
@@ -2422,7 +2422,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b3de00f964a5200f001fe3", 
         "SUMMARY": "Spider House Patio Bar & Cafe", 
         "LOCATION": "500 W. 29th St.", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2430,7 +2430,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b3de00f964a5200f001fe3", 
         "SUMMARY": "Spider House Patio Bar & Cafe", 
         "LOCATION": "500 W. 29th St.", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2438,7 +2438,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b3de00f964a5200f001fe3", 
         "SUMMARY": "Spider House Patio Bar & Cafe", 
         "LOCATION": "500 W. 29th St.", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2446,7 +2446,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b3de00f964a5200f001fe3", 
         "SUMMARY": "Spider House Patio Bar & Cafe", 
         "LOCATION": "500 W. 29th St.", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2454,7 +2454,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/40b3de00f964a5200f001fe3", 
         "SUMMARY": "Spider House Patio Bar & Cafe", 
         "LOCATION": "500 W. 29th St.", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
        //Longbranch Inn
@@ -2463,7 +2463,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/455c6786f964a520713d1fe3", 
         "SUMMARY": "Longbranch Inn", 
         "LOCATION": "1133 E 11th St", 
-        "DTEND": "20130308T020000", 
+        "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
       {
@@ -2471,7 +2471,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/455c6786f964a520713d1fe3", 
         "SUMMARY": "Longbranch Inn", 
         "LOCATION": "1133 E 11th St", 
-        "DTEND": "20130309T020000", 
+        "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
       {
@@ -2479,7 +2479,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/455c6786f964a520713d1fe3", 
         "SUMMARY": "Longbranch Inn", 
         "LOCATION": "1133 E 11th St", 
-        "DTEND": "20130310T020000", 
+        "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
       {
@@ -2487,7 +2487,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/455c6786f964a520713d1fe3", 
         "SUMMARY": "Longbranch Inn", 
         "LOCATION": "1133 E 11th St", 
-        "DTEND": "20130311T020000", 
+        "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
       {
@@ -2495,7 +2495,7 @@ var thelist = function() {
         "URL": "https://foursquare.com/venue/455c6786f964a520713d1fe3", 
         "SUMMARY": "Longbranch Inn", 
         "LOCATION": "1133 E 11th St", 
-        "DTEND": "20130312T020000", 
+        "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       }
       
