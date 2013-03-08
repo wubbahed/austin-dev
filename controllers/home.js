@@ -11,8 +11,8 @@ exports.get = function(req, res) {
 	var strTeam = "", i = 0;
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
-	var tzOffset = date.getTimezoneOffset;
-	console.log(date);
+	var tzOffset = date.getTimezoneOffset();
+	console.log(date.getTimezoneOffset());
 	var _tempDate = new Date(2013, 02, date.getDate(), date.getHours()-6, date.getMinutes());
 	if(date.getTimezoneOffset() === 0000){
 		if(date.getDate()<11 && date.getHours()>9){
@@ -36,7 +36,7 @@ exports.get = function(req, res) {
 		}
 		case 'Fri': {
 			//console.log("Friday");
-			date = new Date(2013, 02, 08,  13, 17);
+			date = new Date(2013, 02, 08,  13, 35);
 			break;
 		}
 		case 'Sat': {
@@ -61,8 +61,8 @@ exports.get = function(req, res) {
 		}
 		case '': {
 			//console.log("default");
-			//date = new Date();
-			date = new Date(2013, 02, 07, 18, 00);
+			date = date;
+			//date = new Date(2013, 02, 07, 18, 00);
 			break;
 		}
 	}
@@ -106,7 +106,7 @@ exports.get = function(req, res) {
 		_newStartTime = new Date(year, month, day, hour-1, min); 
 	//	_newStartTime.setTimezone("US/Central");
 		console.log()
-		if ((date.getDate() == _startDate.getDate()) && date.getTime() >= _newStartTime && (date.getTime() <= _endDate.getTime() || endhour == 09 )) {
+		if ((date.getDate() == _startDate.getDate()) && date.getTime() >= _newStartTime.getTime() && (date.getTime() <= _endDate.getTime() || endhour == 09 )) {
 			// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
 			if (hour > 12) {
@@ -250,7 +250,7 @@ exports.get = function(req, res) {
 				strTeam = strTeam +	_funnyStuff[f];
 			}
 		
-		strTeam = "<ul id='sessions' class="+_tempDate+">" + strTeam + "</ul>"
+		strTeam = "<ul id='sessions' class="+date+">" + strTeam + "</ul>"
 		var _night = '';
 		var _logoPath = "planb_logo.png";
 		
