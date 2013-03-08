@@ -2497,7 +2497,7 @@ var thelist = function() {
         "LOCATION": "1133 E 11th St", 
         "DTEND": "20130312T020000", 
         "DTSTART": "20130311T180000"
-      },
+      }
       
     ], 
     "X-WR-TIMEZONE": "US/Central", 

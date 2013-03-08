@@ -12,14 +12,14 @@ exports.get = function(req, res) {
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
 	var tzOffset = date.getTimezoneOffset;
-	//console.log(date);
+	console.log(date.getDate());
 	
 	//if(date.getTimezoneOffset() === 000){
 		if(date.getDate()<11){
-			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-6, date.getMinutes());
+			date = new Date(2013, date.getMonth(), date.getDate(), date.getHours(), date.getMinutes());
 		
 		} else{
-			date = new Date(date.getYear(), date.getMonth(), date.getDate(), date.getHours()-5, date.getMinutes());
+			date = new Date(2013, date.getMonth(), date.getDate(), date.getHours(), date.getMinutes());
 		}
 //	}
 	//console.log(date.getTimezoneOffset());
@@ -104,7 +104,7 @@ exports.get = function(req, res) {
 		
 		_newStartTime = new Date(year, month, day, hour-1, min); 
 	//	_newStartTime.setTimezone("US/Central");
-		
+		console.log()
 		if ((date.getDate() == _startDate.getDate()) && date.getTime() >= _newStartTime && (date.getTime() <= _endDate.getTime() || endhour == 02 )) {
 			// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
@@ -207,10 +207,10 @@ exports.get = function(req, res) {
 	
 	    return array;
 	}
-	var _startingDate = new Date(2013, 02, 07, 18, 00);
-	console.log("now: "+date);
-	console.log("_startingDate: "+_startingDate);
-	console.log(date.getHours() <= _startingDate.getHours());
+	//var _startingDate = new Date(2013, 02, 07, 18, 00);
+	//console.log("now: "+date);
+	//console.log("_startingDate: "+_startingDate);
+	//console.log(date.getHours() <= _startingDate.getHours());
 	
 	//if ( date.getDate() <= _startingDate.getDate() && date.getHours() < _startingDate.getHours() ) {
 
@@ -249,7 +249,7 @@ exports.get = function(req, res) {
 				strTeam = strTeam +	_funnyStuff[f];
 			}
 		
-		strTeam = "<ul id='sessions'>" + strTeam + "</ul>"
+		strTeam = "<ul id='sessions' class="+ date+">" + strTeam + "</ul>"
 		var _night = '';
 		var _logoPath = "planb_logo.png";
 		
