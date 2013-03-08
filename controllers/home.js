@@ -106,7 +106,7 @@ exports.get = function(req, res) {
 		_newStartTime = new Date(year, month, day, hour-1, min); 
 	//	_newStartTime.setTimezone("US/Central");
 		console.log()
-		if ((date.getDate() == _startDate.getDate()) && date.getTime() >= _newStartTime.getTime() && (date.getTime() <= _endDate.getTime() || endhour == 09 )) {
+		if ((date.getDate() == _startDate.getDate() || date.getDate() == _endDate.getDate() ) && date.getTime() >= _newStartTime.getTime() && (date.getTime() <= _endDate.getTime() || endhour == 09 )) {
 			// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
 			if (hour > 12) {
