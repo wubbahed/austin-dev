@@ -62,6 +62,7 @@ exports.get = function(req, res) {
 		case '': {
 			//console.log("default");
 			//date = new Date();
+			date = new Date(2013, 02, 07, 18, 00);
 			break;
 		}
 	}
