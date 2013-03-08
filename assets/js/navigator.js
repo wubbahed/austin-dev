@@ -41,6 +41,8 @@
 	{'location':'AT&T Conference Center Classroom 106 1900 University Ave','lat':'30.281994','long':'-97.74019'},
 	{'location':'AT&T Conference Center Classroom 204 1900 University Ave','lat':'30.281994','long':'-97.74019'},
 	{'location':'AT&T Conference Center Classroom 202 1900 University Ave','lat':'30.281994','long':'-97.74019'},
+	{'location':'AT&T Conference Center Salon C 1900 University Ave','lat':'30.281994','long':'-97.74019'},
+	
 	
 	{'location':'Sheraton Austin Creekside 701 E 11th St','lat':'30.27031', 'long':'-97.734225'},
 	{'location':'Sheraton Austin Capitol View South 701 E 11th St','lat':'30.27033', 'long':'-97.734332'},
@@ -49,6 +51,7 @@
 	{'location':'Sheraton Austin Capitol ABCD 701 E 11th St','lat':'30.27031', 'long':'-97.734225'},
 	
 	{'location':'Long Center Dell Hall 701 W Riverside Dr','lat':'30.260465', 'long':'-97.751171'},
+	{'location':'Long Center\n701 W Riverside Dr','lat':'30.260465', 'long':'-97.751171'},
 	{'location':'Palmer Events Center Exhibit Hall 1 900 Barton Springs Rd','lat':'30.26054', 'long':'-97.752807'},
 	{'location':'Radisson Town Lake Town Lake Ballroom 111 E Cesar Chavez','lat':'30.263047', 'long':'-97.743712'},
 	

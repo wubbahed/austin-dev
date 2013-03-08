@@ -244,7 +244,7 @@ exports.get = function(req, res) {
 			"<div class='summary'>You know music doesn't start till next week, right?</div>" +
 			"</li>",
 			"<li class='hidden extra'>" + "<button type='button' class='close hidden' ><img src='assets/img/close.png'></button>" +
-			"<div class='summary'>Are you this picky at the Four Season breakfast Buffett?</div>" +
+			"<div class='summary'>Are you this picky at the Four Season breakfast Buffet?</div>" +
 			"</li>"];
 			
 			_funnyStuff = shuffle(_funnyStuff);
