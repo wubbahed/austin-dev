@@ -12,17 +12,17 @@ exports.get = function(req, res) {
 	var query = require('url').parse(req.url, true).query;
 	var date = new Date();
 	var tzOffset = date.getTimezoneOffset;
-	console.log(date.getDate());
-	
-	//if(date.getTimezoneOffset() === 000){
-		if(date.getDate()<11){
-			date = new Date(2013, date.getMonth(), date.getDate(), date.getHours(), date.getMinutes());
+	console.log(date);
+	var _tempDate = new Date(2013, 02, date.getDate(), date.getHours()-6, date.getMinutes());
+	if(date.getTimezoneOffset() === 0000){
+		if(date.getDate()<11 && date.getHours()>9){
+			date = new Date(2013, 02, date.getDate(), date.getHours()-6, date.getMinutes());
 		
-		} else{
-			date = new Date(2013, date.getMonth(), date.getDate(), date.getHours(), date.getMinutes());
+		} else if(date.getHours()>9){
+			date = new Date(2013, date.getMonth(), date.getDate(), date.getHours()-5, date.getMinutes());
 		}
-//	}
-	//console.log(date.getTimezoneOffset());
+	}
+	console.log(date);
 	//a = new time.Date(1337324400000);
 	//	console.log(query.dotw);
 	if (query.dotw === undefined) {
@@ -250,7 +250,7 @@ exports.get = function(req, res) {
 				strTeam = strTeam +	_funnyStuff[f];
 			}
 		
-		strTeam = "<ul id='sessions' class="+ date+">" + strTeam + "</ul>"
+		strTeam = "<ul id='sessions' class="+_tempDate+">" + strTeam + "</ul>"
 		var _night = '';
 		var _logoPath = "planb_logo.png";
 		
