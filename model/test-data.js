@@ -2060,7 +2060,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
-        "LOCATION": "200 Congress Avenue ", 
+        "LOCATION": "200 Congress Avenue", 
         "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
@@ -2068,7 +2068,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
-        "LOCATION": "200 Congress Avenue ", 
+        "LOCATION": "200 Congress Avenue", 
         "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
@@ -2076,7 +2076,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
-        "LOCATION": "200 Congress Avenue ", 
+        "LOCATION": "200 Congress Avenue", 
         "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
@@ -2084,7 +2084,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4d8a30f224bf145602c7ce5d", 
         "SUMMARY": "Bar Congress", 
-        "LOCATION": "200 Congress Avenue ", 
+        "LOCATION": "200 Congress Avenue", 
         "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
@@ -2380,7 +2380,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
-        "LOCATION": "98 San Jacinto Blvd ", 
+        "LOCATION": "98 San Jacinto Blvd", 
         "DTEND": "20130308T090000", 
         "DTSTART": "20130307T180000"
       },
@@ -2388,7 +2388,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
-        "LOCATION": "98 San Jacinto Blvd ", 
+        "LOCATION": "98 San Jacinto Blvd", 
         "DTEND": "20130309T090000", 
         "DTSTART": "20130308T180000"
       },
@@ -2396,7 +2396,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
-        "LOCATION": "98 San Jacinto Blvd ", 
+        "LOCATION": "98 San Jacinto Blvd", 
         "DTEND": "20130310T090000", 
         "DTSTART": "20130309T180000"
       },
@@ -2404,7 +2404,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
-        "LOCATION": "98 San Jacinto Blvd ", 
+        "LOCATION": "98 San Jacinto Blvd", 
         "DTEND": "20130311T090000", 
         "DTSTART": "20130310T180000"
       },
@@ -2412,7 +2412,7 @@ var thelist = function() {
         "UID": "event_Bar", 
         "URL": "https://foursquare.com/venue/4b9962bef964a520897735e3", 
         "SUMMARY": "The Lobby Lounge at Four Seasons Hotel Austin", 
-        "LOCATION": "98 San Jacinto Blvd ", 
+        "LOCATION": "98 San Jacinto Blvd", 
         "DTEND": "20130312T090000", 
         "DTSTART": "20130311T180000"
       },
