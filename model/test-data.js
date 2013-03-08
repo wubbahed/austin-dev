@@ -51,7 +51,7 @@ var thelist = function() {
        {
         "UID": "event_OE02267", 
         "URL": "http://schedule.sxsw.com/2013/events/event_OE02267", 
-        "SUMMARY": "Interact with NASA at the James Webb Telescope Exhibit and See Hubble’s Space Successor", 
+        "SUMMARY": "Interact with NASA at the James Webb Telescope Exhibit", 
         "LOCATION": "Long Center 701 W Riverside Dr", 
         "DTEND": "20130308T23000", 
         "DTSTART": "20130308T120000"
