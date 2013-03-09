@@ -14,12 +14,11 @@ exports.get = function(req, res) {
 	var tzOffset = date.getTimezoneOffset();
 	console.log("before: "+date);
 	//var _tempDate = new Date(2013, 02, date.getDate(), date.getHours()-6, date.getMinutes());
-	
+		//console.log(date.getDate())
 	if(date.getTimezoneOffset() === 0){
-		
-		if(date.getDate()<11  ){
+	//	console.log(date.getDate())
+		if(date.getDate()<10  ){
 			date = new Date(2013, 02, date.getDate(), date.getHours()-6, date.getMinutes());
-		
 		} else{
 			date = new Date(2013, 02, date.getDate(), date.getHours()-5, date.getMinutes());
 		}
@@ -43,7 +42,7 @@ exports.get = function(req, res) {
 		}
 		case 'Sat': {
 			//console.log("Saturday");
-			date = new Date(2013, 02, 09, 01, 23);
+			date = new Date(2013, 02, 09, 11, 23);
 			break;
 		}
 		case 'Sun': {
