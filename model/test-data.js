@@ -48,14 +48,7 @@ var thelist = function() {
         "DTEND": "20130308T133000", 
         "DTSTART": "20130308T123000"
       },
-       {
-        "UID": "event_OE02267", 
-        "URL": "http://schedule.sxsw.com/2013/events/event_OE02267", 
-        "SUMMARY": "Interact with NASA at the James Webb Telescope Exhibit", 
-        "LOCATION": "Long Center 701 W Riverside Dr", 
-        "DTEND": "20130308T23000", 
-        "DTSTART": "20130308T120000"
-      }, 
+     
       {
         "UID": "event_IAP15620", 
         "URL": "http://schedule.sxsw.com/2013/events/event_IAP15620", 

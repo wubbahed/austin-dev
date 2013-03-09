@@ -43,7 +43,7 @@ exports.get = function(req, res) {
 		}
 		case 'Sat': {
 			//console.log("Saturday");
-			date = new Date(2013, 02, 09, 18, 23);
+			date = new Date(2013, 02, 09, 01, 23);
 			break;
 		}
 		case 'Sun': {
@@ -93,9 +93,10 @@ exports.get = function(req, res) {
 		var _endTime = teamlist.VCALENDAR.VEVENT[i].DTEND;
 		//console.log(_endTime);
 		var endyear = _endTime.substring(0, 4);
-		var endmonth = date.getMonth();
+	//	var endmonth = date.getMonth();
 		//(_endTime.substring(5,6)-1);
-		var endday = date.getDate();
+		var endday = _endTime.substring(6, 8);;
+	//console.log(endday);
 		//_endTime.substring(7,8);
 		var endhour = _endTime.substring(9, 11);
 		var endmin = _endTime.substring(11, 13);
@@ -107,8 +108,12 @@ exports.get = function(req, res) {
 		
 		_newStartTime = new Date(year, month, day, hour-1, min); 
 	//	_newStartTime.setTimezone("US/Central");
+	//console.log( _startDate.getDate());
+	//console.log(_endDate.getDate());
+	//	console.log( (date.getDate() === _startDate.getDate() || date.getDate() === _endDate.getDate()) && date.getTime() >= _newStartTime.getTime() && date.getTime() <= _endDate.getTime());
 		
-		if ((date.getDate() == _startDate.getDate() || date.getDate() == _endDate.getDate()  ) && date.getTime() >= _newStartTime.getTime() && (date.getTime() <= _endDate.getTime()  )) {
+		
+		if ((date.getDate() == _startDate.getDate() || date.getDate() == _endDate.getDate()) && date.getTime() >= _newStartTime.getTime() && date.getTime() <= _endDate.getTime()) {
 			// && date.getTime() <= _endDate.getTime()
 			//date.getTime() >= _startDate.getTime()&& date.getTime() <= _endDate.getTime()
 			if (hour > 12) {
